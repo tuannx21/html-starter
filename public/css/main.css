@@ -1,144 +1,26 @@
-.btn-more {
-  height: 75px;
-  max-width: 830px;
-  margin: 40px auto;
-}
-
-.btn-controller {
-  height: 50px;
-  position: absolute;
-  top: 125px;
-  width: 50px;
-}
-
 .button {
-  color: #fff;
-  font-family: Hiragino Kaku Gothic Pro;
-  font-weight: bold;
-  height: 100%;
-  width: 100%;
-  border: 0;
-}
-.button-lg {
-  font-size: 15px;
-}
-.button-md {
-  font-size: 13px;
-}
-.button-sm {
-  font-size: 11px;
-}
-.button.is-red {
-  background-color: #d0121b;
-}
-.button.is-black {
-  background-color: #282828;
-}
-.button.has-radius {
-  border-radius: 5px;
-}
-.button.has-spacing {
-  letter-spacing: 4px;
-}
-.button:hover, .button:focus {
-  outline: none;
-}
-
-.form-group {
-  box-shadow: 1px 2px 2px #656565;
-  color: #707070;
-  margin: auto;
-  font-size: 16px;
-  font-family: Hiragino Kaku Gothic Pro;
-}
-
-.form-select {
-  width: 100%;
-  height: 100%;
-  background-color: #fafafa;
-  border: 0;
-  border-radius: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.form-select:focus {
-  outline: none;
-}
-
-.form-input {
-  width: 100%;
-  height: 100%;
-  background-color: #fafafa;
-  border: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.form-input:focus {
-  outline: none;
-  background-color: #ccc;
-}
-
-.button:hover, .form-select:hover, .img.has-hover:hover {
-  cursor: pointer;
-  opacity: .8;
-}
-
-.img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.img.has-radius {
-  border-radius: 5px;
-}
-
-.link {
-  color: #707070;
-  cursor: pointer;
-  font-size: inherit;
-}
-.link.no-underline {
-  text-decoration: none;
-}
-.link-red {
-  color: #d01821;
-}
-.link:hover, .link:active {
-  text-decoration: none;
-  color: #e89032;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
   text-align: center;
+  border-radius: 5px;
+  border: 1px solid red;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1px #444444;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.button:active {
+  box-shadow: 0 0;
+}
+.button-red {
+  background-color: #ff2323;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 50px;
+.image {
+  width: 100%;
 }
-
-p {
-  line-height: 25px;
-}
-
-.no-gutter {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.no-margin {
-  margin-top: 0;
-  margin-right: 0;
-}
-
-.no-padding {
-  padding-left: 0;
-  padding-right: 0;
+.image-border-radius {
+  border-radius: 5px;
 }
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
@@ -274,6 +156,7 @@ header .brand-responsive {
 
 .index-news {
   font-size: 25px;
+  line-height: 25px;
 }
 .index-news img {
   width: 100%;
@@ -284,6 +167,36 @@ header .brand-responsive {
 .index-news .row {
   margin-top: 50px;
 }
+@media screen and (max-width: 991px) {
+  .index-news .row {
+    margin-top: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+        flex-flow: column;
+  }
+  .index-news .row .news-date {
+    display: inline;
+    font-size: 15px;
+  }
+  .index-news .row .news-status {
+    font-size: 15px;
+  }
+  .index-news .row .order-1 {
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .index-news .row .order-2 {
+    -ms-flex-order: 2;
+        order: 2;
+    margin: 15px 0;
+  }
+  .index-news .row .order-3 {
+    -ms-flex-order: 3;
+        order: 3;
+    margin-bottom: 40px;
+  }
+}
 .index-news .news-status {
   font-size: 15px;
   padding: 2px 0px;
@@ -291,6 +204,7 @@ header .brand-responsive {
   border: 1px solid red;
   text-align: center;
   margin: 10px 0;
+  display: inline;
 }
 .index-news .news-button {
   margin: 50px 0;
@@ -298,11 +212,30 @@ header .brand-responsive {
 .index-news .news-button .button-subcribe {
   background-color: red;
   color: white;
-  border-radius: 5px;
-  border: 1px solid red;
   padding: 15px 50px;
-  text-align: center;
   display: block;
-  cursor: pointer;
   margin: auto;
+}
+@media screen and (max-width: 991px) {
+  .index-news .news-button {
+    margin: 40px 0;
+  }
+  .index-news .news-button button-subcribe {
+    font-size: 15px;
+  }
+}
+
+.index-list {
+  font-size: 25px;
+  color: #383737;
+}
+.index-list .list-header {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.index-list .list-row {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #383737;
 }

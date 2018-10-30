@@ -1,0 +1,19 @@
+.button {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid red;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1px $light-grey;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    box-shadow: 0 0;
+  }
+  &-red {
+    background-color: $light-red;
+  }
+}

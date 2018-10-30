@@ -1,18 +1,7 @@
-%hover {
-  cursor: pointer;
-  opacity: .8;
-}
-
-.img {
+.image {
   width: 100%;
-  height: 100%;
-  display: block;
 
-  &.has-radius {
-    @include border-radius(5px);
-  }
-
-  &.has-hover {
-    &:hover {@extend %hover;}
+  &-border-radius {
+    border-radius: 5px;
   }
 }
