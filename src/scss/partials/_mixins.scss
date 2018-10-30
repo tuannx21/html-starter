@@ -1,0 +1,63 @@
+// Border radius
+
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Screen for responsive
+@mixin responsive-desktop() {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin responsive-device-md() {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin responsive-tablet() {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin responsive-tablet-only() {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin responsive-mobile() {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin responsive-mobile-only() {
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin responsive-mobile-lg-only() {
+  @media screen and (min-width: 420) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin responsive-mobile-md() {
+  @media screen and (max-width: 419px) {
+    @content;
+  }
+}
+
+@mixin responsive-mobile-xs() {
+  @media screen and (max-width: 319px) {
+    @content;
+  }
+}

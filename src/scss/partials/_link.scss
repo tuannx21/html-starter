@@ -1,0 +1,19 @@
+.link {
+  color: $grey-light;
+  cursor: pointer;
+  font: {
+    size: inherit;
+  }
+
+  &.no-underline {
+    text-decoration: none;
+  }
+
+  &-red {color: $color-txt-red;}
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: $orange;
+  }
+}

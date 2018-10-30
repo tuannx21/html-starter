@@ -1,0 +1,38 @@
+.index-news{
+  img {
+    width:100%;
+  }
+  font-size: 25px;
+  .news-header{
+    font-size: 30px;
+  }
+
+  .row{
+    margin-top: 50px;
+  }
+
+  .news-status{
+    font-size: 15px;
+    padding: 2px 0px;
+    color: red;
+    border: 1px solid red;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .news-button{
+    margin: 50px 0;
+    .button-subcribe {
+      background-color: red;
+      color: white;
+      border-radius: 5px;
+      border: 1px solid red;
+      padding: 15px 50px;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      margin: auto
+    }
+  }
+
+}

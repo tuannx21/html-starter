@@ -1,0 +1,308 @@
+.btn-more {
+  height: 75px;
+  max-width: 830px;
+  margin: 40px auto;
+}
+
+.btn-controller {
+  height: 50px;
+  position: absolute;
+  top: 125px;
+  width: 50px;
+}
+
+.button {
+  color: #fff;
+  font-family: Hiragino Kaku Gothic Pro;
+  font-weight: bold;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+.button-lg {
+  font-size: 15px;
+}
+.button-md {
+  font-size: 13px;
+}
+.button-sm {
+  font-size: 11px;
+}
+.button.is-red {
+  background-color: #d0121b;
+}
+.button.is-black {
+  background-color: #282828;
+}
+.button.has-radius {
+  border-radius: 5px;
+}
+.button.has-spacing {
+  letter-spacing: 4px;
+}
+.button:hover, .button:focus {
+  outline: none;
+}
+
+.form-group {
+  box-shadow: 1px 2px 2px #656565;
+  color: #707070;
+  margin: auto;
+  font-size: 16px;
+  font-family: Hiragino Kaku Gothic Pro;
+}
+
+.form-select {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  border: 0;
+  border-radius: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.form-select:focus {
+  outline: none;
+}
+
+.form-input {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  border: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.form-input:focus {
+  outline: none;
+  background-color: #ccc;
+}
+
+.button:hover, .form-select:hover, .img.has-hover:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.img.has-radius {
+  border-radius: 5px;
+}
+
+.link {
+  color: #707070;
+  cursor: pointer;
+  font-size: inherit;
+}
+.link.no-underline {
+  text-decoration: none;
+}
+.link-red {
+  color: #d01821;
+}
+.link:hover, .link:active {
+  text-decoration: none;
+  color: #e89032;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+p {
+  line-height: 25px;
+}
+
+.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.no-margin {
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+footer {
+  background-color: black;
+  font-size: 15px;
+  line-height: 15px;
+  color: white;
+  padding: 50px 0;
+}
+footer .footer-table {
+  border-bottom: 1px solid white;
+  margin: 15px 0;
+  padding: 10px 0;
+}
+footer .footer-table .row {
+  margin: 8px 0;
+}
+footer .footer-table .row * {
+  padding: 0;
+}
+
+header .navbar {
+  margin: 0;
+}
+header .cotainer {
+  border-bottom: 1px solid black;
+}
+header .navbar-header {
+  position: relative;
+}
+header .navbar-header button {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+header .brand-responsive {
+  margin: 20px 0px;
+}
+
+.index-business {
+  padding: 50px 0;
+}
+@media screen and (max-width: 991px) {
+  .index-business {
+    padding: 40px 0;
+  }
+  .index-business .col-md-4:not(:first-child) {
+    margin-top: 25px;
+  }
+}
+
+.index-news {
+  font-size: 25px;
+}
+.index-news img {
+  width: 100%;
+}
+.index-news .news-header {
+  font-size: 30px;
+}
+.index-news .row {
+  margin-top: 50px;
+}
+.index-news .news-status {
+  font-size: 15px;
+  padding: 2px 0px;
+  color: red;
+  border: 1px solid red;
+  text-align: center;
+  margin: 10px 0;
+}
+.index-news .news-button {
+  margin: 50px 0;
+}
+.index-news .news-button .button-subcribe {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid red;
+  padding: 15px 50px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  margin: auto;
+}

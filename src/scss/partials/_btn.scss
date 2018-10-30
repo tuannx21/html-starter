@@ -1,0 +1,55 @@
+.btn-more {
+  height: 75px;
+  max-width: 830px;
+  margin: 40px auto;
+}
+
+.btn-controller {
+  height: 50px;
+  position: absolute;
+  top: 125px;
+  width: 50px;
+  
+}
+
+.button {
+  color: $white;
+  font: {
+    family: $main-font;
+    weight: bold;
+  }
+  height: 100%;
+  width: 100%;
+  border: 0;
+
+  &-lg {
+    font-size: 15px;
+  }
+
+  &-md {
+    font-size: 13px;
+  }
+
+  &-sm {
+    font-size: 11px;
+  }
+
+  &.is-red {background-color: $color-btn-red;}
+
+  &.is-black {
+    background-color: $black-light;
+  }
+
+  &.has-radius {
+    @include border-radius(5px);
+  }
+
+  &.has-spacing {letter-spacing: 4px;}
+
+  &:hover,
+  &:focus {outline: none;}
+
+  &:hover {
+    @extend %hover;
+  }
+}

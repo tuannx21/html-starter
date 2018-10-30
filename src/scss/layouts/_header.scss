@@ -1,0 +1,19 @@
+header{
+  .navbar{
+    margin: 0;
+  }
+  .cotainer{
+    border-bottom: 1px solid black;
+  }
+  .navbar-header {
+    position: relative;
+    button{
+      position: absolute;
+      top: 25%;
+      right: 5%;
+    }
+  }
+  .brand-responsive{
+    margin: 20px 0px;
+  }
+}
