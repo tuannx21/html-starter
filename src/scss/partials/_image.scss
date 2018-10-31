@@ -2,6 +2,18 @@
   width: 100%;
 
   &-border-radius {
-    border-radius: 5px;
+    border-radius: 10px;
+  }
+
+  &-border-radius-top {
+    border-radius: 10px 10px 0 0;
+  }
+
+  &-with-shadow {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &:hover {
+    opacity: 0.8
   }
 }

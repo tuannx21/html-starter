@@ -1,18 +1,35 @@
 .index-list {
-  font-size: 25px;
-  color: #693636;
+  font-size: 20px;
+  color: i$light-grey;
 
   .list-header {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 50px;
   }
 
   .list-row {
     padding-bottom: 25px;
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
     border-bottom: 1px solid $deep-grey; 
   }
 
+  .list-button{
+    margin-bottom: 50px;
+    position: relative;
+    height: 50px;
+
+    .button-subcribe-list {
+      font-size: 15px;
+      color: $absolute-white;
+      padding: 15px 50px;
+      display: block;
+      position: absolute;
+      right: 0;
+    }
+    @include responsive-tablet() {
+      margin: 40px 0;
+    }
+  }
 
 }

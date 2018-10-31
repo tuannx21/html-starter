@@ -1,13 +1,13 @@
 .index-news {
-  font-size: 25px;
-  line-height: 25px;
-
-  img {
-    width: 100%;
-  }
+  font-size: 16px;
+  line-height: 30px;
 
   .news-header {
-    font-size: 30px;
+    font-size: 36px;
+  }
+
+  .news-title {
+    font-size: 20px;
   }
 
   .row {
@@ -25,6 +25,7 @@
 
       .news-status {
         font-size: 15px;
+        padding: 4px 8px;
       }
 
       .order {
@@ -46,28 +47,31 @@
   }
 
   .news-status{
-    font-size: 15px;
-    padding: 2px 0px;
-    color: red;
-    border: 1px solid red;
+    font-size: 12px;
+    padding: 8px 12px;
+    color: $light-red;
+    border: 1px solid $light-red;
     text-align: center;
-    margin: 10px 0;
+    margin: 12px 0;
     display: inline;
   }
 
   .news-button{
     margin: 50px 0;
+
     .button-subcribe {
-      background-color: red;
-      color: white;
-      padding: 15px 50px;
+      font-size: 20px;
+      color: $absolute-white;
+      padding: 25px 50px;
       display: block;
-      margin: auto
+      margin: auto;
     }
     @include responsive-tablet() {
       margin: 40px 0;
-      button-subcribe {
-        font-size: 15px;
+
+      .button-subcribe {
+        font-size: 16tpx;
+        padding: 15px 50px;
       }
     }
   }

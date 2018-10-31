@@ -4,16 +4,17 @@
   border: 1px solid red;
   outline: none;
   cursor: pointer;
-  box-shadow: 0 1px $light-grey;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
 
   &:hover {
-    opacity: 0.9;
+    opacity: 0.8;
   }
 
   &:active {
     box-shadow: 0 0;
   }
   &-red {
-    background-color: $light-red;
+    background-color: $heavy-red;
+    color: $absolute-white;
   }
 }
