@@ -1,15 +1,26 @@
-footer {
-  background-color: black;
-  font-size: 15px;
-  line-height: 15px;
-  color: white;
+.main-footer {
+  background-color: $deep-grey;
+  font-size: 14px;
+  line-height: 14px;
+  color: $absolute-white;
   padding: 50px 0;
+
+  .footer-table-title {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .no-margin {
+    margin: 0;
+  }
+
   .footer-table {
-    border-bottom: 1px solid white;
-    margin: 15px 0;
-    padding: 10px 0;
-    .row {
-      margin: 8px 0;
+    border-bottom: 1px solid $footer-border-grey;
+    margin-bottom: 25px;
+    padding: 25px 0;
+
+    .table-row {
+      margin: 14px 0;
       * {
         padding: 0;
       }

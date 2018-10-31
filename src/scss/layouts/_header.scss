@@ -1,19 +1,24 @@
-header{
+.main-header {
+  color: $light-grey;
+  
   .navbar{
     margin: 0;
+    border-bottom: 1px solid $black-blur;
   }
-  .cotainer{
-    border-bottom: 1px solid black;
+
+  .navbar-default {
+    background-color: $absolute-white;
   }
-  .navbar-header {
-    position: relative;
-    button{
-      position: absolute;
-      top: 25%;
-      right: 5%;
+
+  .row-top-navbar {
+    margin: 0;
+  }
+
+  .navbar-brand {
+    padding: 20px 0 0 0;
+    @include responsive-mobile () {
+      padding: 0;
     }
   }
-  .brand-responsive{
-    margin: 20px 0px;
-  }
+
 }

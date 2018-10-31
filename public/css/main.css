@@ -4,7 +4,7 @@
   border: 1px solid red;
   outline: none;
   cursor: pointer;
-  box-shadow: 0 1px #444444;
+  box-shadow: 0 1px #302d29;
 }
 .button:hover {
   opacity: 0.9;
@@ -13,7 +13,7 @@
   box-shadow: 0 0;
 }
 .button-red {
-  background-color: #ff2323;
+  background-color: #d01821;
 }
 
 .image {
@@ -105,41 +105,52 @@ th {
   text-align: left;
 }
 
-footer {
-  background-color: black;
-  font-size: 15px;
-  line-height: 15px;
-  color: white;
+.main-footer {
+  background-color: #282828;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
   padding: 50px 0;
 }
-footer .footer-table {
-  border-bottom: 1px solid white;
-  margin: 15px 0;
-  padding: 10px 0;
+.main-footer .footer-table-title {
+  margin-top: 10px;
+  font-size: 15px;
 }
-footer .footer-table .row {
-  margin: 8px 0;
+.main-footer .no-margin {
+  margin: 0;
 }
-footer .footer-table .row * {
+.main-footer .footer-table {
+  border-bottom: 1px solid #898989;
+  margin-bottom: 25px;
+  padding: 25px 0;
+}
+.main-footer .footer-table .table-row {
+  margin: 14px 0;
+}
+.main-footer .footer-table .table-row * {
   padding: 0;
 }
 
-header .navbar {
+.main-header {
+  color: #302d29;
+}
+.main-header .navbar {
+  margin: 0;
+  border-bottom: 1px solid #959595;
+}
+.main-header .navbar-default {
+  background-color: #ffffff;
+}
+.main-header .row-top-navbar {
   margin: 0;
 }
-header .cotainer {
-  border-bottom: 1px solid black;
+.main-header .navbar-brand {
+  padding: 20px 0 0 0;
 }
-header .navbar-header {
-  position: relative;
-}
-header .navbar-header button {
-  position: absolute;
-  top: 25%;
-  right: 5%;
-}
-header .brand-responsive {
-  margin: 20px 0px;
+@media screen and (max-width: 767px) {
+  .main-header .navbar-brand {
+    padding: 0;
+  }
 }
 
 .index-business {
@@ -227,7 +238,7 @@ header .brand-responsive {
 
 .index-list {
   font-size: 25px;
-  color: #383737;
+  color: #693636;
 }
 .index-list .list-header {
   font-size: 30px;
@@ -237,5 +248,5 @@ header .brand-responsive {
 .index-list .list-row {
   padding-bottom: 25px;
   margin-bottom: 25px;
-  border-bottom: 1px solid #383737;
+  border-bottom: 1px solid #282828;
 }

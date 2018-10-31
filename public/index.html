@@ -8,13 +8,14 @@
 
     <title>Html Starter</title>
     <meta name="description" content="">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <header>
-  <nav class="navbar navbar-default">
+    <header class="main-header">
+  <nav class="navbar navbar-default navbar-white">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -22,35 +23,33 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand brand-responsive"  href="#">
+        <a class="navbar-brand" href="#">
           <img class="logo-responsive" src="/images/header_logo.jpg" alt="headerlogo">
         </a>
       </div>
-      <div class="collapse navbar-collapse">
-        <div class="row">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="row row-top-navbar">
           <ul class="nav navbar-nav navbar-right">
-            <li style="padding: 15px;">
-              <select class="form-select language" name="language">
-                <option value="english">日本語</option>
-                <option value="japanese">English</option>
-                <option value="vietnamese">Vietnamese</option>
-              </select>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">LANGUAGE <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">ENGLISH</a></li>
+                <li><a href="#">JPAN</a></li>
+              </ul>
             </li>
-            <li><a href="#">Page 2</a></li>
+            <li><a href="#">LINK</a></li>
           </ul>
         </div>
-        <div class="row">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">asdas</a></li>
-            <li><a href="#">Wnhngn</a></li>
-            <li><a href="#">abc</a></li>
-          </ul>
-        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">LINK 1</a></li>
+          <li><a href="#">LINK 2</a></li>
+          <li><a href="#">LINK 3</a></li>
+        </ul>
       </div>
     </div>
   </nav>
-</header>
-    
+</header>    
 <section id="index">
   <section class="index-banner">
     <picture>
@@ -192,38 +191,38 @@
       </div>
     </div>
   </section>
-</section>    <footer>
+</section>    <footer class="main-footer">
   <div class="container">
     <div class="row">
       <div class="col-md-3">
         <img src="images/bottom_logo.png" alt="footerlogo">
       </div>
       <div class="col-md-9">
-        <div class="row">
-          <h2>ABCDSAFDGADFKJDBFKSJDHF</h2>
+        <div class="row no-margin">
+          <h2 class="footer-table-title">ABCDSAFDGADFKJDBFKSJDHF</h2>
           <div class="footer-table">
-            <div class="row">
-              <div class="col-md-3">Nguyen Xuan Tuan 1</div>
+            <div class="row table-row">
+              <div class="col-md-3">Nguyen</div>
               <div class="col-md-9">Nguyen Xuan Tuan 1Nguyen Xuan Tuan 1Nguyen Xuan Tuan 1</div>
             </div>
-            <div class="row">
+            <div class="row table-row">
               <div class="col-md-3">Nguyen Xuan Tuan 2</div>
               <div class="col-md-9">Nguyen Xuan Tuan 1Nguyen Xuan Tuan 1Nguyen Xuan Tuan 1Nguyen Xuan Tuan 1Nguyen Xuan
                 Tuan 1Nguyen Xuan Tuan 1</div>
             </div>
-            <div class="row">
-              <div class="col-md-3">Nguyen Xuan Tuan 3</div>
+            <div class="row table-row">
+              <div class="col-md-3">NguyenTuan 3</div>
               <div class="col-md-9">Nguyen Xuan Tuan 1</div>
             </div>
-            <div class="row">
-              <div class="col-md-3">Nguyen Xuan Tuan 4</div>
+            <div class="row table-row">
+              <div class="col-md-3">Tuan 4</div>
               <div class="col-md-9">Nguyen Xuan Tuan 1Nguyen Xuan Tuan 1Nguyen Xuan Tuan 1</div>
             </div>
-            <div class="row">
-              <div class="col-md-3">Nguyen Xuan Tuan 5</div>
+            <div class="row table-row">
+              <div class="col-md-3">Tuan 5</div>
               <div class="col-md-9">Nguyen Xuan Tuan 1Nguyen Xuan Tuan 1Nguyen Xuan Tuan 1</div>
             </div>
-            <div class="row">
+            <div class="row table-row">
               <div class="col-md-3">Nguyen Xuan Tuan 6</div>
               <div class="col-md-9">Nguyen Xuan Tuan 1Nguyen Xuan Tuan 1Nguyen Xuan Tuan 1</div>
             </div>
