@@ -37,11 +37,16 @@
 
 .button {
   text-align: center;
-  border-radius: 5px;
-  border: 1px solid red;
+  border: none;
   outline: none;
   cursor: pointer;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.button-border-radius {
+  border-radius: 10px;
+}
+.button-border-radius-bottom {
+  border-radius: 0 0 10px 10px;
 }
 .button:hover {
   opacity: 0.8;
@@ -282,8 +287,9 @@ th {
   margin: 50px 0;
 }
 .index-news .news-button .button-subcribe {
-  font-size: 20px;
+  border-radius: 10px;
   color: #ffffff;
+  font-size: 20px;
   padding: 25px 50px;
   display: block;
   margin: auto;
@@ -299,29 +305,32 @@ th {
 }
 
 .index-list {
+  color: #302d29;
   font-size: 20px;
-  color: i #302d29;
 }
 .index-list .list-header {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 50px;
 }
-.index-list .list-row {
-  padding-bottom: 25px;
-  margin: 0 0 25px 0;
+.index-list .list-item {
   border-bottom: 1px solid #282828;
+  padding: 25px 0;
+}
+.index-list .list-item:first-child {
+  padding-top: 0;
 }
 .index-list .list-button {
-  margin-bottom: 50px;
+  margin: 25px 0 50px 0;
   position: relative;
   height: 50px;
 }
 .index-list .list-button .button-subcribe-list {
-  font-size: 15px;
+  border-radius: 10px;
   color: #ffffff;
-  padding: 15px 50px;
   display: block;
+  font-size: 15px;
+  padding: 5px 50px;
   position: absolute;
   right: 0;
 }
@@ -331,11 +340,28 @@ th {
   }
 }
 
+.index-location {
+  display: block;
+}
 .index-location .location-list-header {
   font-size: 35px;
   margin-bottom: 50px;
 }
-.index-location .row-location-place {
+.index-location .location-places {
   overflow: auto;
-  padding: 5px 0;
+  padding: 5px 15px;
+}
+.index-location .button-more {
+  background-color: #302d29;
+  border-radius: 0 0 10px 10px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 50px;
+  height: 50px;
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .index-location {
+    display: none;
+  }
 }

@@ -1,6 +1,6 @@
 .index-list {
+  color: $light-grey;
   font-size: 20px;
-  color: i$light-grey;
 
   .list-header {
     font-size: 36px;
@@ -8,22 +8,26 @@
     margin-bottom: 50px;
   }
 
-  .list-row {
-    padding-bottom: 25px;
-    margin: 0 0 25px 0;
+  .list-item {
     border-bottom: 1px solid $deep-grey; 
+    padding: 25px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
   }
 
   .list-button{
-    margin-bottom: 50px;
+    margin: 25px 0 50px 0;
     position: relative;
     height: 50px;
 
     .button-subcribe-list {
-      font-size: 15px;
+      border-radius: 10px;
       color: $absolute-white;
-      padding: 15px 50px;
       display: block;
+      font-size: 15px;
+      padding: 5px 50px;
       position: absolute;
       right: 0;
     }
