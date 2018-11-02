@@ -1,7 +1,6 @@
 .main-header {
-  color: $light-grey;
-  
-  .navbar{
+
+  .navbar {
     margin: 0;
     border-bottom: 1px solid $black-blur;
   }
@@ -9,15 +8,23 @@
   .navbar-default {
     background-color: $absolute-white;
   }
-
-  .row-top-navbar {
-    margin: 0;
+  .nav-list-link {
+    float: right;
   }
 
   .navbar-brand {
     padding: 20px 0 0 0;
-    @include responsive-mobile () {
+
+    @include responsive-mobile() {
       padding: 0;
+    }
+  }
+
+  .navbar-default .navbar-nav {
+    li {
+      a {
+        color: $header-font-color;
+      }
     }
   }
 

@@ -1,0 +1,11 @@
+.link {
+  cursor: pointer;
+  
+  &-black {
+    color: $header-font-color;
+
+    &:hover {
+      color: $light-red;
+    }
+  }
+}

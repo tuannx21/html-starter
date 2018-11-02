@@ -1,3 +1,40 @@
+/* 5 Columns */
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  min-height: 1px;
+}
+
+.col-xs-15 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-15 {
+    width: 20%;
+    float: left;
+  }
+}
+.no-gutters {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .button {
   text-align: center;
   border-radius: 5px;
@@ -31,6 +68,16 @@
 }
 .image:hover {
   opacity: 0.8;
+}
+
+.link {
+  cursor: pointer;
+}
+.link-black {
+  color: #575653;
+}
+.link-black:hover {
+  color: #d01821;
 }
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
@@ -126,9 +173,6 @@ th {
   margin-top: 10px;
   font-size: 15px;
 }
-.main-footer .no-margin {
-  margin: 0;
-}
 .main-footer .footer-table {
   border-bottom: 1px solid #898989;
   margin-bottom: 25px;
@@ -141,9 +185,6 @@ th {
   padding: 0;
 }
 
-.main-header {
-  color: #302d29;
-}
 .main-header .navbar {
   margin: 0;
   border-bottom: 1px solid #959595;
@@ -151,8 +192,8 @@ th {
 .main-header .navbar-default {
   background-color: #ffffff;
 }
-.main-header .row-top-navbar {
-  margin: 0;
+.main-header .nav-list-link {
+  float: right;
 }
 .main-header .navbar-brand {
   padding: 20px 0 0 0;
@@ -161,6 +202,9 @@ th {
   .main-header .navbar-brand {
     padding: 0;
   }
+}
+.main-header .navbar-default .navbar-nav li a {
+  color: #575653;
 }
 
 .index-business {
