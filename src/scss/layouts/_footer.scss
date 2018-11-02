@@ -1,25 +1,29 @@
 .main-footer {
   background-color: $deep-grey;
-  font-size: 14px;
-  line-height: 14px;
   color: $absolute-white;
+  font-size: 14px;
+  line-height: 24px;
   padding: 50px 0;
 
-  .footer-table-title {
-    margin-top: 10px;
+  .footer-info-title {
     font-size: 15px;
+    margin-top: 10px;
+
+    @include responsive-tablet() {
+      margin-top: 20px;
+    }
   }
 
-  .footer-table {
+  .footer-info {
     border-bottom: 1px solid $footer-border-grey;
-    margin-bottom: 25px;
-    padding: 25px 0;
+    padding: 15px 0;
 
-    .table-row {
-      margin: 14px 0;
-      * {
-        padding: 0;
-      }
+    .info-row {
+      padding: 10px 0;
+    }
+
+    @include responsive-tablet() {
+      border-bottom: none;
     }
   }
 }
