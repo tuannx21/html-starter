@@ -33,6 +33,11 @@
     }
     @include responsive-tablet() {
       margin: 40px 0;
+
+      .button-subcribe-list {
+        position: static;
+        margin: auto;
+      }
     }
   }
 

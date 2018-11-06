@@ -351,6 +351,10 @@ th {
   .index-list .list-button {
     margin: 40px 0;
   }
+  .index-list .list-button .button-subcribe-list {
+    position: static;
+    margin: auto;
+  }
 }
 
 .index-location {
@@ -376,5 +380,17 @@ th {
 @media screen and (max-width: 991px) {
   .index-location {
     display: none;
+  }
+}
+
+.index-banner-bottom {
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 991px) {
+  .index-banner-bottom {
+    padding-bottom: 80px;
+  }
+  .index-banner-bottom .col-md-4:not(:first-child) {
+    margin-top: 25px;
   }
 }
