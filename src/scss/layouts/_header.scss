@@ -1,8 +1,11 @@
 .main-header {
+  body {
+    font-family: $main-font;
+  }
 
   .navbar {
     margin: 0;
-    border-bottom: 1px solid $black-blur;
+    border-bottom: 1px solid $header-border;
   }
 
   .navbar-default {
@@ -10,6 +13,10 @@
   }
   .nav-list-link {
     float: right;
+
+    @include responsive-mobile() {
+      float: none;
+    }
   }
 
   .navbar-brand {

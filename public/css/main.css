@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 5 Columns */
 .col-xs-15,
 .col-sm-15,
@@ -196,15 +197,23 @@ th {
   }
 }
 
+.main-header body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic Pro", "游ゴシック", "游ゴシック体", YuGothic, "Yu Gothic", "ＭＳ ゴシック", "MS Gothic", sans-serif;
+}
 .main-header .navbar {
   margin: 0;
-  border-bottom: 1px solid #959595;
+  border-bottom: 1px solid #e6e6e6;
 }
 .main-header .navbar-default {
   background-color: #ffffff;
 }
 .main-header .nav-list-link {
   float: right;
+}
+@media screen and (max-width: 767px) {
+  .main-header .nav-list-link {
+    float: none;
+  }
 }
 .main-header .navbar-brand {
   padding: 20px 0 0 0;
@@ -274,6 +283,7 @@ th {
 }
 .index-news .news .new-image {
   float: right;
+  margin-left: 25px;
 }
 .index-news .news .new-image-tablet {
   display: none;
@@ -393,4 +403,21 @@ th {
   .index-banner-bottom .col-md-4:not(:first-child) {
     margin-top: 25px;
   }
+}
+
+.news-title {
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+.news-title .title-center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 36px;
+  height: 40px;
+  width: 300px;
+  text-align: center;
 }

@@ -1,0 +1,14 @@
+.news-title {
+  border-bottom: 1px solid $header-border;
+  position: relative;
+
+  .title-center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    font-size: 36px;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+  }
+}
