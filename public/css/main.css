@@ -230,51 +230,19 @@ th {
   }
 }
 
-.index-news {
-  font-size: 16px;
-  line-height: 30px;
-}
 .index-news .news-header {
   font-size: 36px;
 }
-.index-news .news-title {
-  font-size: 20px;
-}
-.index-news .row {
-  margin-top: 50px;
+.index-news .date-status-area .new-date {
+  font-size: 16px;
+  padding-bottom: 10px;
 }
 @media screen and (max-width: 991px) {
-  .index-news .row {
-    margin-top: 40px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column;
-        flex-flow: column;
-  }
-  .index-news .row .news-date {
+  .index-news .date-status-area .new-date {
     display: inline;
-    font-size: 15px;
-  }
-  .index-news .row .news-status {
-    font-size: 15px;
-    padding: 4px 8px;
-  }
-  .index-news .row .order-1 {
-    -ms-flex-order: 1;
-        order: 1;
-  }
-  .index-news .row .order-2 {
-    -ms-flex-order: 2;
-        order: 2;
-    margin: 15px 0;
-  }
-  .index-news .row .order-3 {
-    -ms-flex-order: 3;
-        order: 3;
-    margin-bottom: 40px;
   }
 }
-.index-news .news-status {
+.index-news .date-status-area .new-status {
   font-size: 12px;
   padding: 8px 12px;
   color: #d01821;
@@ -282,6 +250,51 @@ th {
   text-align: center;
   margin: 12px 0;
   display: inline;
+}
+@media screen and (max-width: 991px) {
+  .index-news .date-status-area {
+    margin: 25px 0;
+  }
+}
+.index-news .new-title {
+  font-size: 20px;
+}
+.index-news .new-content {
+  font-size: 16px;
+  line-height: 30px;
+}
+.index-news .news {
+  margin: 50px 0;
+}
+.index-news .news .new {
+  margin-bottom: 50px;
+}
+.index-news .news .new:last-child {
+  margin-bottom: 0px;
+}
+.index-news .news .new-image {
+  float: right;
+}
+.index-news .news .new-image-tablet {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .index-news .news {
+    margin: 40px 0;
+  }
+  .index-news .news .new {
+    margin-bottom: 40px;
+  }
+  .index-news .news .new:last-child {
+    margin-bottom: 0px;
+  }
+  .index-news .news .new-image {
+    display: none;
+  }
+  .index-news .news .new-image-tablet {
+    display: block;
+    width: 100%;
+  }
 }
 .index-news .news-button {
   margin: 50px 0;

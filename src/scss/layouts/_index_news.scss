@@ -1,59 +1,82 @@
 .index-news {
-  font-size: 16px;
-  line-height: 30px;
 
   .news-header {
     font-size: 36px;
   }
 
-  .news-title {
-    font-size: 20px;
-  }
+  .date-status-area {
+    .new-date {
+      font-size: 16px;
+      padding-bottom: 10px;
+  
+      @include responsive-tablet() {
+        display: inline;
+      }
+    }
 
-  .row {
-    margin-top: 50px;
+    .new-status{
+      font-size: 12px;
+      padding: 8px 12px;
+      color: $light-red;
+      border: 1px solid $light-red;
+      text-align: center;
+      margin: 12px 0;
+      display: inline;
+    }
 
     @include responsive-tablet() {
-      margin-top: 40px;
-      display: flex;
-      flex-flow: column;
-
-      .news-date {
-        display: inline;
-        font-size: 15px;
-      } 
-
-      .news-status {
-        font-size: 15px;
-        padding: 4px 8px;
-      }
-
-      .order {
-        &-1 {
-          order: 1;
-        }
-
-        &-2 {
-          order: 2;
-          margin: 15px 0;
-        }
-
-        &-3 {
-          order: 3;
-          margin-bottom: 40px;
-        }
-      }      
+      margin: 25px 0;
     }
   }
 
-  .news-status{
-    font-size: 12px;
-    padding: 8px 12px;
-    color: $light-red;
-    border: 1px solid $light-red;
-    text-align: center;
-    margin: 12px 0;
-    display: inline;
+  .new-title {
+    font-size: 20px;
+  }
+
+  .new-content {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .news {
+    margin: 50px 0;
+
+    .new {
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+
+    .new-image {
+      float: right ;
+    }
+
+    .new-image-tablet {
+      display: none;
+    }
+
+    @include responsive-tablet() {
+      margin: 40px 0;
+
+      .new {
+        margin-bottom: 40px;
+  
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+  
+      .new-image {
+        display: none;
+      }
+
+      .new-image-tablet {
+        display: block;
+        width: 100%;
+      }
+    }
   }
 
   .news-button{
