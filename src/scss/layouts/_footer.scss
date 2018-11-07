@@ -18,12 +18,12 @@
     border-bottom: 1px solid $footer-border-grey;
     padding: 15px 0;
 
-    .info-row {
-      padding: 10px 0;
-    }
-
     @include responsive-tablet() {
       border-bottom: none;
+    }
+    
+    .info-row {
+      padding: 10px 0;
     }
   }
 }

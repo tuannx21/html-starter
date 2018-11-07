@@ -1,5 +1,4 @@
 .index-news {
-
   .news-header {
     font-size: 36px;
   }
@@ -10,7 +9,7 @@
       padding-bottom: 10px;
   
       @include responsive-tablet() {
-        display: inline;
+        display: inline-block;
       }
     }
 
@@ -83,6 +82,10 @@
   .news-button{
     margin: 50px 0;
 
+    @include responsive-tablet() {
+      margin: 40px 0;
+    }
+
     .button-subcribe {
       border-radius: 10px;
       color: $absolute-white;
@@ -90,11 +93,8 @@
       padding: 25px 50px;
       display: block;
       margin: auto;
-    }
-    @include responsive-tablet() {
-      margin: 40px 0;
 
-      .button-subcribe {
+      @include responsive-tablet() {
         font-size: 16tpx;
         padding: 15px 50px;
       }

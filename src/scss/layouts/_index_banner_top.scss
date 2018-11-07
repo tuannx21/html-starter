@@ -1,0 +1,17 @@
+.index-banner-top {
+  .banner_mobile {
+    display: none;
+
+    @include responsive-tablet() {
+      display: block;
+    }
+  }
+
+  .banner_desktop {
+    display: block;
+
+    @include responsive-tablet() {
+      display: none;
+    }
+  }
+}

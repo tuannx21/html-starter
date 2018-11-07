@@ -1,36 +1,3 @@
-@charset "UTF-8";
-/* 5 Columns */
-.col-xs-15,
-.col-sm-15,
-.col-md-15,
-.col-lg-15 {
-  position: relative;
-  min-height: 1px;
-}
-
-.col-xs-15 {
-  width: 20%;
-  float: left;
-}
-
-@media (min-width: 768px) {
-  .col-sm-15 {
-    width: 20%;
-    float: left;
-  }
-}
-@media (min-width: 992px) {
-  .col-md-15 {
-    width: 20%;
-    float: left;
-  }
-}
-@media (min-width: 1200px) {
-  .col-lg-15 {
-    width: 20%;
-    float: left;
-  }
-}
 .no-gutters {
   margin-left: 0px;
   margin-right: 0px;
@@ -79,10 +46,10 @@
 .link {
   cursor: pointer;
 }
-.link-black {
+.link--black {
   color: #575653;
 }
-.link-black:hover {
+.link--black:hover {
   color: #d01821;
 }
 
@@ -188,18 +155,15 @@ th {
   border-bottom: 1px solid #898989;
   padding: 15px 0;
 }
-.main-footer .footer-info .info-row {
-  padding: 10px 0;
-}
 @media screen and (max-width: 991px) {
   .main-footer .footer-info {
     border-bottom: none;
   }
 }
-
-.main-header body {
-  font-family: "Hiragino Sans", "Hiragino Kaku Gothic Pro", "游ゴシック", "游ゴシック体", YuGothic, "Yu Gothic", "ＭＳ ゴシック", "MS Gothic", sans-serif;
+.main-footer .footer-info .info-row {
+  padding: 10px 0;
 }
+
 .main-header .navbar {
   margin: 0;
   border-bottom: 1px solid #e6e6e6;
@@ -216,15 +180,29 @@ th {
   }
 }
 .main-header .navbar-brand {
-  padding: 20px 0 0 0;
+  padding: 20px 0 0;
 }
 @media screen and (max-width: 767px) {
   .main-header .navbar-brand {
     padding: 0;
   }
 }
-.main-header .navbar-default .navbar-nav li a {
-  color: #575653;
+
+.index-banner-top .banner_mobile {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .index-banner-top .banner_mobile {
+    display: block;
+  }
+}
+.index-banner-top .banner_desktop {
+  display: block;
+}
+@media screen and (max-width: 991px) {
+  .index-banner-top .banner_desktop {
+    display: none;
+  }
 }
 
 .index-business {
@@ -248,7 +226,7 @@ th {
 }
 @media screen and (max-width: 991px) {
   .index-news .date-status-area .new-date {
-    display: inline;
+    display: inline-block;
   }
 }
 .index-news .date-status-area .new-status {
@@ -309,6 +287,11 @@ th {
 .index-news .news-button {
   margin: 50px 0;
 }
+@media screen and (max-width: 991px) {
+  .index-news .news-button {
+    margin: 40px 0;
+  }
+}
 .index-news .news-button .button-subcribe {
   border-radius: 10px;
   color: #ffffff;
@@ -318,9 +301,6 @@ th {
   margin: auto;
 }
 @media screen and (max-width: 991px) {
-  .index-news .news-button {
-    margin: 40px 0;
-  }
   .index-news .news-button .button-subcribe {
     font-size: 16tpx;
     padding: 15px 50px;
@@ -328,15 +308,16 @@ th {
 }
 
 .index-list {
-  color: #302d29;
   font-size: 20px;
 }
 .index-list .list-header {
+  color: #302d29;
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 50px;
 }
 .index-list .list-item {
+  color: #302d29;
   border-bottom: 1px solid #282828;
   padding: 25px 0;
 }
@@ -344,9 +325,14 @@ th {
   padding-top: 0;
 }
 .index-list .list-button {
-  margin: 25px 0 50px 0;
+  margin: 25px 0 50px;
   position: relative;
   height: 50px;
+}
+@media screen and (max-width: 991px) {
+  .index-list .list-button {
+    margin: 40px 0;
+  }
 }
 .index-list .list-button .button-subcribe-list {
   border-radius: 10px;
@@ -358,25 +344,25 @@ th {
   right: 0;
 }
 @media screen and (max-width: 991px) {
-  .index-list .list-button {
-    margin: 40px 0;
-  }
   .index-list .list-button .button-subcribe-list {
     position: static;
     margin: auto;
   }
 }
 
-.index-location {
-  display: block;
-}
 .index-location .location-list-header {
   font-size: 35px;
   margin-bottom: 50px;
 }
 .index-location .location-places {
-  overflow: auto;
-  padding: 5px 15px;
+  display: table;
+  width: 100%;
+  padding: 5px 0;
+}
+.index-location .location-places .place {
+  display: table-cell;
+  height: 100%;
+  width: 20%;
 }
 .index-location .button-more {
   background-color: #302d29;
@@ -410,14 +396,28 @@ th {
   position: relative;
 }
 .news-title .title-center {
-  margin: auto;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   font-size: 36px;
-  height: 40px;
-  width: 300px;
-  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.news-article .list-event {
+  margin: 50px 0;
+}
+.news-article .list-event .list-title {
+  font-size: 24px;
+}
+.news-article .list-event .events {
+  margin: 15px 0;
+}
+.news-article .list-event .events .event {
+  font-size: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e7e6e5;
+}
+
+.home-banner {
+  background-color: #302d29;
 }

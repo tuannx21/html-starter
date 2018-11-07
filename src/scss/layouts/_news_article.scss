@@ -1,0 +1,19 @@
+.news-article {
+  .list-event {
+    margin: 50px 0;
+
+    .list-title {
+      font-size: 24px;
+    }
+
+    .events {
+      margin: 15px 0;
+
+      .event {
+        font-size: 15px;
+        padding: 15px 0;
+        border-bottom: 1px solid $grey-blur;
+      }
+    }
+  }
+}
