@@ -1,0 +1,154 @@
+.home-reservation {
+  background: url(/images/home/bg_spa-logo.png) no-repeat scroll top;
+
+  .reservation-title {
+    color: $brown-red;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin: 25px 0;
+  }
+
+  .reservation-promotion {
+    position: relative;
+    color: $brown-red;
+    font-size: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    .promo-tool-tip {
+      position: absolute;
+      padding: 20px;
+      display: none;
+      min-width: 300px;
+      background-color: $absolute-white;
+      border: 1px solid black;
+      z-index: 10;
+      top: -190px;
+      right: 35%;
+    }
+
+    .promo-tool-tip::before,
+    .promo-tool-tip::after {
+      position: absolute;
+      content: "";
+      background: transparent;
+      display: block;
+    }
+
+    .promo-tool-tip::after {
+      bottom: -20px;
+      left: 40%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 10px 0 10px;
+      border-color: #fff transparent transparent transparent;
+    }
+
+    .promo-tool-tip::before {
+      bottom: -25px;
+      left: 40%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 24px 11px 0 11px;
+      border-color: $light-grey transparent transparent transparent;
+    }
+  }
+
+  .reservation-main {
+    display: table;
+    width: 100%;
+    border: 2px solid $home-border-color;
+    border-radius: 6px;
+
+    @include responsive-tablet() {
+      display: none;
+    }
+
+    .reservation-information {
+      vertical-align: top;
+      display: table-cell;
+      width: 80%;
+    }
+  
+    .reservation-button {
+      vertical-align: top;
+      display: table-cell;
+      width: 20%
+    }
+  }
+
+  .reservation-main-mb {
+    display: none;
+
+    @include responsive-tablet() {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .select-inf,
+  .date-input {
+    position: relative;
+    color: $home-font-color;
+    border: 1px solid $home-border-color;
+    font-size: 15px;
+    background-color: $cream-white;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    outline-width: 0;
+    cursor: pointer;
+    appearance: none;
+    border-radius: 0;
+  }
+
+  .button-search {
+    font-size: 20px;
+    height: 100px;
+    width: 100%;
+    border: 1px solid $home-border-color;
+    box-shadow: none;
+    border-radius: 0 6px 6px 0;
+
+    @include responsive-tablet() {
+      border-radius: 10px;
+    }
+  }
+
+  .reservation-banner {
+    margin: 50px 0;
+
+    .banner-pc {
+      display: block;
+      margin: auto;
+
+      @include responsive-tablet() {
+        display: none;
+      }
+    }
+
+    .banner-mb {
+      display: none;
+
+      @include responsive-tablet() {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .list-item:before {
+    position: absolute;
+    content: "";
+    background: url(/images/icon/ico_arrow-down.png);
+    top: 40%;
+    display: block;
+    right: 20px;
+    width: 12px;
+    height: 8px;
+    z-index: 10;
+  }
+}

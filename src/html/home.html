@@ -7,117 +7,75 @@
 </section>
 <section class="home-reservation">
   <div class="container">
-    <div class="booking-container">
-      
+    <div class="reservation-title">ご予約</div>
+    <div class="reservation-promotion">
+      <div class="promo-tool-tip" id="tooltip">
+        <p>大江戸温泉物語グループの宿泊予約<br>なら公式サイトがお得です。</p>
+        <p>ベストレート価格とは？</p>
+        <p>他社インターネット予約サイトよりお得な料金で提供する価格です。</p>
+        <a href="#" class="link--red">詳細はこちら</a>
+      </div>
+      <p>
+        1泊2食<span><img src="images/home/img_best-price.png"></span>の
+        <a class="link--red" 
+        onmouseover="document.getElementById('tooltip').style.display='block'" 
+        onmouseout="document.getElementById('tooltip').style.display='none'">
+          ベストレート価格
+        </a>でご予約いただけます。
+      </p>
+    </div>
+    <div class="reservation-container">
+      <div class="reservation-main-mb">
+        <button class="button button-red button-search">空室検索</button>
+      </div>
+      <ul class="reservation-main">
+        <li class="reservation-information">
+          <ul class="information-top table-list">
+            <li class="list-item">
+              <select class="select-inf">
+                <option value="Hokkaido">ホテルを選ぶ</option>
+              </select>
+            </li>
+            <li class="list-item">
+              <select class="select-inf">
+                <option value="volvo">ホテルを選ぶ</option>
+              </select>
+            </li>
+          </ul>
+          <ul class="information-bottom table-list">
+            <li class="list-item">
+              <input class="date-input" type="date" name="duration">
+            </li>
+            <li class="list-item">
+              <select class="select-inf">
+                <option value="volvo">部屋数</option>
+              </select>
+            </li>
+            <li class="list-item">
+              <select class="select-inf">
+                <option value="volvo">部屋数</option>
+              </select>
+            </li>
+            <li class="list-item">
+              <select class="select-inf">
+                <option value="volvo">大人人数</option>
+              </select>
+            </li>
+            <li class="list-item">
+              <select class="select-inf">
+                <option value="volvo">子供人数</option>
+              </select>
+            </li>
+          </ul>
+        </li>
+        <li class="reservation-button">
+          <button class="button button-red button-search">空室検索</button>
+        </li>
+      </ul>
+    </div>
+    <div class="reservation-banner">
+      <img src="images/home/banner_pc.gif" alt="banner_pc" class="banner-pc image-border-radius">
+      <img src="images/home/banner_mb.gif" alt="banner_pc" class="banner-mb image-border-radius">
     </div>
   </div>
 </section>
-
-<style>
-    .table {
-      border: 1px solid black;
-      border-radius: 5px;
-      display: table;
-      width: 100%;
-    }
-  
-    .table-cell-dropdown {
-      display: table-cell;
-      height: 100%;
-      width: 80%;
-    }
-  
-    .table-cell-button {
-      background-color: red;
-      display: table-cell;
-      height: 100%;
-      width: 20%;
-    }
-  
-    .top, .bottom {
-      display: table;
-      width: 100%;
-    }
-  
-    .top li, .bottom li {
-      background-color: blue;
-      padding: 10px;
-      display: table-cell;
-      height: 100%;
-      width: 16.666%;
-      border: 1px solid white;
-    }
-  
-    .top li select, .bottom li select{
-      width: 100%;
-      background-color: blue;
-      color: white;
-      border: none;
-    }
-  </style>
-
-<ul class="table">
-    <li class="table-cell-dropdown">
-      <ul class="top">
-        <li>
-          <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
-        </li>
-        <li>
-          <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
-        </li>
-      </ul>
-      <ul class="bottom">
-        <li>
-          <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
-        </li>
-        <li>
-          <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
-        </li>
-        <li>
-          <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
-        </li>
-        <li>
-          <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
-        </li>
-        <li>
-          <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
-        </li>
-      </ul>
-    </li>
-    <li class="table-cell-button"></li>
-  </ul>

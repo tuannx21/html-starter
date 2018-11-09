@@ -8,4 +8,16 @@
       color: $light-red;
     }
   }
+
+  &--red {
+    color: $light-red;
+    text-decoration: underline;
+
+    &:hover,
+    &:active, {
+      color: $brown-red;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
 }

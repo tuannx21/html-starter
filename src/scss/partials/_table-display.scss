@@ -1,0 +1,10 @@
+.table-list {
+  display: table;
+  width: 100%;
+
+  li {
+    display: table-cell;
+    width: 16.6667%;
+    position: relative;
+  }
+}

@@ -52,6 +52,25 @@
 .link--black:hover {
   color: #d01821;
 }
+.link--red {
+  color: #d01821;
+  text-decoration: underline;
+}
+.link--red:hover, .link--red:active {
+  color: #403a32;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.table-list {
+  display: table;
+  width: 100%;
+}
+.table-list li {
+  display: table-cell;
+  width: 16.6667%;
+  position: relative;
+}
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
 html,
@@ -420,4 +439,150 @@ th {
 
 .home-banner {
   background-color: #302d29;
+}
+
+.home-reservation {
+  background: url(/images/home/bg_spa-logo.png) no-repeat scroll top;
+}
+.home-reservation .reservation-title {
+  color: #403a32;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  margin: 25px 0;
+}
+.home-reservation .reservation-promotion {
+  position: relative;
+  color: #403a32;
+  font-size: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.home-reservation .reservation-promotion .promo-tool-tip {
+  position: absolute;
+  padding: 20px;
+  display: none;
+  min-width: 300px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  z-index: 10;
+  top: -190px;
+  right: 35%;
+}
+.home-reservation .reservation-promotion .promo-tool-tip::before,
+.home-reservation .reservation-promotion .promo-tool-tip::after {
+  position: absolute;
+  content: "";
+  background: transparent;
+  display: block;
+}
+.home-reservation .reservation-promotion .promo-tool-tip::after {
+  bottom: -20px;
+  left: 40%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 10px 0 10px;
+  border-color: #fff transparent transparent transparent;
+}
+.home-reservation .reservation-promotion .promo-tool-tip::before {
+  bottom: -25px;
+  left: 40%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 24px 11px 0 11px;
+  border-color: #302d29 transparent transparent transparent;
+}
+.home-reservation .reservation-main {
+  display: table;
+  width: 100%;
+  border: 2px solid #cccccc;
+  border-radius: 6px;
+}
+@media screen and (max-width: 991px) {
+  .home-reservation .reservation-main {
+    display: none;
+  }
+}
+.home-reservation .reservation-main .reservation-information {
+  vertical-align: top;
+  display: table-cell;
+  width: 80%;
+}
+.home-reservation .reservation-main .reservation-button {
+  vertical-align: top;
+  display: table-cell;
+  width: 20%;
+}
+.home-reservation .reservation-main-mb {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .home-reservation .reservation-main-mb {
+    display: block;
+    width: 100%;
+  }
+}
+.home-reservation .select-inf,
+.home-reservation .date-input {
+  position: relative;
+  color: #707070;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+  background-color: #fafafa;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  outline-width: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+}
+.home-reservation .button-search {
+  font-size: 20px;
+  height: 100px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  box-shadow: none;
+  border-radius: 0 6px 6px 0;
+}
+@media screen and (max-width: 991px) {
+  .home-reservation .button-search {
+    border-radius: 10px;
+  }
+}
+.home-reservation .reservation-banner {
+  margin: 50px 0;
+}
+.home-reservation .reservation-banner .banner-pc {
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 991px) {
+  .home-reservation .reservation-banner .banner-pc {
+    display: none;
+  }
+}
+.home-reservation .reservation-banner .banner-mb {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .home-reservation .reservation-banner .banner-mb {
+    display: block;
+    width: 100%;
+  }
+}
+.home-reservation .list-item:before {
+  position: absolute;
+  content: "";
+  background: url(/images/icon/ico_arrow-down.png);
+  top: 40%;
+  display: block;
+  right: 20px;
+  width: 12px;
+  height: 8px;
+  z-index: 10;
 }
