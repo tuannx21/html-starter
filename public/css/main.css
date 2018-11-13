@@ -80,6 +80,10 @@ th {
   text-align: left;
 }
 
+.container {
+  width: 1032px;
+}
+
 .button {
   text-align: center;
   border: none;
@@ -588,4 +592,149 @@ th {
   width: 12px;
   height: 8px;
   z-index: 10;
+}
+
+.home-map {
+  background: url(/images/home/bg_map.png);
+}
+@media screen and (max-width: 991px) {
+  .home-map {
+    display: none;
+  }
+}
+.home-map .map-area {
+  background: url(/images/home/img_map.jpg) no-repeat 30px 0;
+  position: relative;
+  height: 900px;
+  font-size: 20px;
+}
+.home-map .map-area .map-title {
+  position: absolute;
+  color: #302d29;
+  font-size: 36px;
+  top: 50px;
+}
+.home-map .map-area .left-line-1 {
+  position: absolute;
+  top: 120px;
+}
+.home-map .map-area .left-line-2 {
+  position: absolute;
+  top: 150px;
+}
+.home-map .map-area .left-line-3 {
+  position: absolute;
+  top: 185px;
+}
+.home-map .map-area .left-line-4 {
+  position: absolute;
+  top: 220px;
+}
+.home-map .map-area .left-line-5 {
+  position: absolute;
+  top: 285px;
+}
+.home-map .map-area .left-line-6 {
+  position: absolute;
+  top: 315px;
+}
+.home-map .map-area .left-line-7 {
+  position: absolute;
+  top: 350px;
+}
+.home-map .map-area .left-line-8 {
+  position: absolute;
+  top: 413px;
+}
+.home-map .map-area .left-line-9 {
+  position: absolute;
+  top: 443px;
+}
+.home-map .map-area .left-line-10 {
+  position: absolute;
+  top: 473px;
+}
+.home-map .map-area .left-line-11 {
+  position: absolute;
+  top: 543px;
+}
+.home-map .map-area .left-line-12 {
+  position: absolute;
+  top: 579px;
+}
+.home-map .map-area .left-line-13 {
+  position: absolute;
+  top: 823px;
+}
+.home-map .map-area .left-line-14 {
+  position: absolute;
+  top: 853px;
+}
+.home-map .map-area .right-line-1 {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+.home-map .map-area .right-line-2 {
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+.home-map .map-area .right-line-3 {
+  position: absolute;
+  right: 0;
+  top: 93px;
+}
+.home-map .map-area .right-line-4 {
+  position: absolute;
+  right: 0;
+  top: 124px;
+}
+.home-map .map-area .right-line-5 {
+  position: absolute;
+  right: 0;
+  top: 158px;
+}
+.home-map .map-area .right-line-6 {
+  position: absolute;
+  right: 0;
+  top: 188px;
+}
+.home-map .map-area .right-line-7 {
+  position: absolute;
+  right: 0;
+  top: 253px;
+}
+.home-map .map-area .right-line-8 {
+  position: absolute;
+  right: 0;
+  top: 283px;
+}
+.home-map .map-area .right-line-9 {
+  position: absolute;
+  right: 0;
+  top: 350px;
+}
+.home-map .place-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.home-map .place-dot.red {
+  background-color: #d0121b;
+}
+.home-map .place-dot.orange {
+  background-color: #e89032;
+}
+.home-map .place-dot.green {
+  background-color: #55866b;
+}
+.home-map .place-dot.blue {
+  background-color: #5c7ba3;
+}
+.home-map .place-dot.purple {
+  background-color: #875b87;
+}
+.home-map .place-dot.pink {
+  background-color: #e57e7e;
 }

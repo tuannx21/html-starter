@@ -1,0 +1,175 @@
+.home-map {
+  background: url(/images/home/bg_map.png);
+
+  @include responsive-tablet() {
+    display: none;
+  }
+
+  .map-area {
+    background: url(/images/home/img_map.jpg) no-repeat 30px 0;
+    position: relative;
+    height: 900px;
+    font-size: 20px;
+    
+    .map-title {
+      position: absolute;
+      color: $light-grey;
+      font-size: 36px;
+      top: 50px
+    }
+
+    .left-line-1 {
+      position: absolute;
+      top: 120px;
+    }
+
+    .left-line-2 {
+      position: absolute;
+      top: 150px;
+    }
+
+    .left-line-3 {
+      position: absolute;
+      top: 185px;
+    }
+
+    .left-line-4 {
+      position: absolute;
+      top: 220px;
+    }
+
+    .left-line-5 {
+      position: absolute;
+      top: 285px;
+    }
+
+    .left-line-6 {
+      position: absolute;
+      top: 315px;
+    }
+
+    .left-line-7 {
+      position: absolute;
+      top: 350px;
+    }
+
+    .left-line-8 {
+      position: absolute;
+      top: 413px;
+    }
+
+    .left-line-9 {
+      position: absolute;
+      top: 443px;
+    }
+
+    .left-line-10 {
+      position: absolute;
+      top: 473px;
+    }
+
+    .left-line-11 {
+      position: absolute;
+      top: 543px;
+    }
+
+    .left-line-12 {
+      position: absolute;
+      top: 579px;
+    }
+
+    .left-line-13 {
+      position: absolute;
+      top: 823px;
+    }
+
+    .left-line-14 {
+      position: absolute;
+      top: 853px;
+    }
+
+    .right-line-1 {
+      position: absolute;
+      right: 0;
+      top: 30px;
+    }
+
+    .right-line-2 {
+      position: absolute;
+      right: 0;
+      top: 60px;
+    }
+
+    .right-line-3 {
+      position: absolute;
+      right: 0;
+      top: 93px;
+    }
+
+    .right-line-4 {
+      position: absolute;
+      right: 0;
+      top: 124px;
+    }
+
+    .right-line-5 {
+      position: absolute;
+      right: 0;
+      top: 158px;
+    }
+
+    .right-line-6 {
+      position: absolute;
+      right: 0;
+      top: 188px;
+    }
+
+    .right-line-7 {
+      position: absolute;
+      right: 0;
+      top: 253px;
+    }
+
+    .right-line-8 {
+      position: absolute;
+      right: 0;
+      top: 283px;
+    }
+
+    .right-line-9 {
+      position: absolute;
+      right: 0;
+      top: 350px;
+    }
+  }
+
+  .place-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+
+    &.red {
+      background-color: $heavy-red;
+    }
+
+    &.orange {
+      background-color: $dark-orange;
+    }
+
+    &.green {
+      background-color: $dark-green;
+    }
+
+    &.blue {
+      background-color: $dark-blue;
+    }
+
+    &.purple {
+      background-color: $dark-purple;
+    }
+
+    &.pink {
+      background-color: $pastel-pink;
+    }
+  }
+}
