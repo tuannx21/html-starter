@@ -1,5 +1,5 @@
 .home-reservation {
-  background: url(/images/home/bg_spa-logo.png) no-repeat scroll top;
+  background: url(/images/home/bg_spa-logo.png) no-repeat top;
 
   .reservation-title {
     color: $brown-red;
@@ -42,8 +42,8 @@
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 20px 10px 0 10px;
-      border-color: #fff transparent transparent transparent;
+      border-width: 20px 10px 0;
+      border-color: #fff transparent;
     }
 
     .promo-tool-tip::before {
@@ -52,8 +52,8 @@
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 24px 11px 0 11px;
-      border-color: $light-grey transparent transparent transparent;
+      border-width: 24px 11px 0;
+      border-color: $light-grey transparent;
     }
   }
 
@@ -90,7 +90,7 @@
   }
 
   .select-inf,
-  .date-input {
+  .input-date {
     position: relative;
     color: $home-font-color;
     border: 1px solid $home-border-color;
@@ -145,7 +145,6 @@
     content: "";
     background: url(/images/icon/ico_arrow-down.png);
     top: 40%;
-    display: block;
     right: 20px;
     width: 12px;
     height: 8px;

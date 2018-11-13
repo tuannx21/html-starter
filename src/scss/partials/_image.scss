@@ -1,11 +1,11 @@
 .image {
   width: 100%;
 
-  &-border-radius {
-    @include border-radius(10px);
+  &.image-border-radius {
+    border-radius: 10px;
   }
 
-  &-border-radius-top {
+  &.image-border-radius-top {
     border-radius: 10px 10px 0 0;
   }
 

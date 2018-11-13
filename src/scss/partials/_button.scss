@@ -3,13 +3,13 @@
   border: none;
   outline: none;
   cursor: pointer;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px $black-blur;
 
-  &-border-radius {
-    @include border-radius(10px);
+  &.button-border-radius {
+    border-radius: 10px;
   }
 
-  &-border-radius-bottom {
+  &.button-border-radius-bottom {
     border-radius: 0 0 10px 10px;
   }
 
@@ -20,7 +20,8 @@
   &:active {
     box-shadow: 0 0;
   }
-  &-red {
+
+  &.button-red {
     background-color: $heavy-red;
     color: $absolute-white;
   }

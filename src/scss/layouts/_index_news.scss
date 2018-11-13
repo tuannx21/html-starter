@@ -4,6 +4,10 @@
   }
 
   .date-status-area {
+    @include responsive-tablet() {
+      margin: 25px 0;
+    }
+
     .new-date {
       font-size: 16px;
       padding-bottom: 10px;
@@ -23,9 +27,7 @@
       display: inline;
     }
 
-    @include responsive-tablet() {
-      margin: 25px 0;
-    }
+    
   }
 
   .new-title {
@@ -40,39 +42,39 @@
   .news {
     margin: 50px 0;
 
+    @include responsive-tablet() {
+      margin: 40px 0;
+    }
+
     .new {
       margin-bottom: 50px;
 
       &:last-child {
         margin-bottom: 0px;
       }
-    }
 
-    .new-image {
-      float: right ;
-      margin-left: 25px;
-    }
-
-    .new-image-tablet {
-      display: none;
-    }
-
-    @include responsive-tablet() {
-      margin: 40px 0;
-
-      .new {
+      @include responsive-tablet() {
         margin-bottom: 40px;
   
         &:last-child {
           margin-bottom: 0px;
         }
       }
-  
-      .new-image {
+    }
+
+    .new-image {
+      float: right ;
+      margin-left: 25px;
+
+      @include responsive-tablet() {
         display: none;
       }
+    }
 
-      .new-image-tablet {
+    .new-image-tablet {
+      display: none;
+
+      @include responsive-tablet() {
         display: block;
         width: 100%;
       }
@@ -95,7 +97,7 @@
       margin: auto;
 
       @include responsive-tablet() {
-        font-size: 16tpx;
+        font-size: 16px;
         padding: 15px 50px;
       }
     }

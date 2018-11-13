@@ -19,7 +19,7 @@
     padding: 15px 0;
 
     @include responsive-tablet() {
-      border-bottom: none;
+      border-bottom: 0;
     }
     
     .info-row {

@@ -1,77 +1,3 @@
-.no-gutters {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.button {
-  text-align: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
-}
-.button-border-radius {
-  border-radius: 10px;
-}
-.button-border-radius-bottom {
-  border-radius: 0 0 10px 10px;
-}
-.button:hover {
-  opacity: 0.8;
-}
-.button:active {
-  box-shadow: 0 0;
-}
-.button-red {
-  background-color: #d0121b;
-  color: #ffffff;
-}
-
-.image {
-  width: 100%;
-}
-.image-border-radius {
-  border-radius: 10px;
-}
-.image-border-radius-top {
-  border-radius: 10px 10px 0 0;
-}
-.image-with-shadow {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-.image:hover {
-  opacity: 0.8;
-}
-
-.link {
-  cursor: pointer;
-}
-.link--black {
-  color: #575653;
-}
-.link--black:hover {
-  color: #d01821;
-}
-.link--red {
-  color: #d01821;
-  text-decoration: underline;
-}
-.link--red:hover, .link--red:active {
-  color: #403a32;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.table-list {
-  display: table;
-  width: 100%;
-}
-.table-list li {
-  display: table-cell;
-  width: 16.6667%;
-  position: relative;
-}
-
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -154,6 +80,75 @@ th {
   text-align: left;
 }
 
+.button {
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px #959595;
+}
+.button.button-border-radius {
+  border-radius: 10px;
+}
+.button.button-border-radius-bottom {
+  border-radius: 0 0 10px 10px;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button:active {
+  box-shadow: 0 0;
+}
+.button.button-red {
+  background-color: #d0121b;
+  color: #ffffff;
+}
+
+.image {
+  width: 100%;
+}
+.image.image-border-radius {
+  border-radius: 10px;
+}
+.image.image-border-radius-top {
+  border-radius: 10px 10px 0 0;
+}
+.image-with-shadow {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.image:hover {
+  opacity: 0.8;
+}
+
+.link {
+  cursor: pointer;
+}
+.link.link-black {
+  color: #575653;
+}
+.link.link-black:hover {
+  color: #d01821;
+}
+.link.link-red {
+  color: #d01821;
+  text-decoration: underline;
+}
+.link.link-red:hover, .link.link-red:active {
+  color: #403a32;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.table-list {
+  display: table;
+  width: 100%;
+}
+.table-list .list-item {
+  display: table-cell;
+  width: 16.6667%;
+  position: relative;
+}
+
 .main-footer {
   background-color: #282828;
   color: #ffffff;
@@ -176,7 +171,7 @@ th {
 }
 @media screen and (max-width: 991px) {
   .main-footer .footer-info {
-    border-bottom: none;
+    border-bottom: 0;
   }
 }
 .main-footer .footer-info .info-row {
@@ -205,6 +200,9 @@ th {
   .main-header .navbar-brand {
     padding: 0;
   }
+}
+.main-header .navbar-default .navbar-nav li a {
+  color: #575653;
 }
 
 .index-banner-top .banner_mobile {
@@ -239,6 +237,11 @@ th {
 .index-news .news-header {
   font-size: 36px;
 }
+@media screen and (max-width: 991px) {
+  .index-news .date-status-area {
+    margin: 25px 0;
+  }
+}
 .index-news .date-status-area .new-date {
   font-size: 16px;
   padding-bottom: 10px;
@@ -257,11 +260,6 @@ th {
   margin: 12px 0;
   display: inline;
 }
-@media screen and (max-width: 991px) {
-  .index-news .date-status-area {
-    margin: 25px 0;
-  }
-}
 .index-news .new-title {
   font-size: 20px;
 }
@@ -272,32 +270,38 @@ th {
 .index-news .news {
   margin: 50px 0;
 }
+@media screen and (max-width: 991px) {
+  .index-news .news {
+    margin: 40px 0;
+  }
+}
 .index-news .news .new {
   margin-bottom: 50px;
 }
 .index-news .news .new:last-child {
   margin-bottom: 0px;
 }
-.index-news .news .new-image {
-  float: right;
-  margin-left: 25px;
-}
-.index-news .news .new-image-tablet {
-  display: none;
-}
 @media screen and (max-width: 991px) {
-  .index-news .news {
-    margin: 40px 0;
-  }
   .index-news .news .new {
     margin-bottom: 40px;
   }
   .index-news .news .new:last-child {
     margin-bottom: 0px;
   }
+}
+.index-news .news .new-image {
+  float: right;
+  margin-left: 25px;
+}
+@media screen and (max-width: 991px) {
   .index-news .news .new-image {
     display: none;
   }
+}
+.index-news .news .new-image-tablet {
+  display: none;
+}
+@media screen and (max-width: 991px) {
   .index-news .news .new-image-tablet {
     display: block;
     width: 100%;
@@ -321,7 +325,7 @@ th {
 }
 @media screen and (max-width: 991px) {
   .index-news .news-button .button-subcribe {
-    font-size: 16tpx;
+    font-size: 16px;
     padding: 15px 50px;
   }
 }
@@ -442,7 +446,7 @@ th {
 }
 
 .home-reservation {
-  background: url(/images/home/bg_spa-logo.png) no-repeat scroll top;
+  background: url(/images/home/bg_spa-logo.png) no-repeat top;
 }
 .home-reservation .reservation-title {
   color: #403a32;
@@ -482,8 +486,8 @@ th {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 20px 10px 0 10px;
-  border-color: #fff transparent transparent transparent;
+  border-width: 20px 10px 0;
+  border-color: #fff transparent;
 }
 .home-reservation .reservation-promotion .promo-tool-tip::before {
   bottom: -25px;
@@ -491,8 +495,8 @@ th {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 24px 11px 0 11px;
-  border-color: #302d29 transparent transparent transparent;
+  border-width: 24px 11px 0;
+  border-color: #302d29 transparent;
 }
 .home-reservation .reservation-main {
   display: table;
@@ -525,7 +529,7 @@ th {
   }
 }
 .home-reservation .select-inf,
-.home-reservation .date-input {
+.home-reservation .input-date {
   position: relative;
   color: #707070;
   border: 1px solid #cccccc;
@@ -580,7 +584,6 @@ th {
   content: "";
   background: url(/images/icon/ico_arrow-down.png);
   top: 40%;
-  display: block;
   right: 20px;
   width: 12px;
   height: 8px;

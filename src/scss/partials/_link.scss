@@ -1,7 +1,7 @@
 .link {
   cursor: pointer;
   
-  &--black {
+  &.link-black {
     color: $header-font-color;
 
     &:hover {
@@ -9,7 +9,7 @@
     }
   }
 
-  &--red {
+  &.link-red {
     color: $light-red;
     text-decoration: underline;
 
