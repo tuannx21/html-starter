@@ -1,7 +1,13 @@
 .index-location {
+  @extend %in-div-lg;
+
+  @include responsive-tablet() {
+    display: none;
+  }
+
   .location-list-header {
-    font-size: 35px;
     margin-bottom: 50px;
+    font-size: 35px;
   }
 
   .location-places {
@@ -17,16 +23,6 @@
   }
 
   .button-more {
-    background-color: $light-grey;
-    border-radius: 0 0 10px 10px;
-    color: $absolute-white;
-    font-size: 16px; 
-    margin-bottom: 50px;
     height: 50px;
-    width: 100%;
-  }
-
-  @include responsive-tablet() {
-    display: none;
   }
 }

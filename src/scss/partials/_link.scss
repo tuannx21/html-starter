@@ -9,7 +9,7 @@
     }
   }
 
-  &.link-red {
+  &.link-light-red {
     color: $light-red;
     text-decoration: underline;
 
@@ -18,6 +18,54 @@
       color: $brown-red;
       cursor: pointer;
       text-decoration: none;
+    }
+  }
+
+  &.link-heavy-red {
+    color: $light-grey;
+
+    &:hover {
+      color: $heavy-red;
+    }
+  }
+
+  &.link-dark-orange {
+    color: $light-grey;
+
+    &:hover {
+      color: $dark-orange;
+    }
+  }
+
+  &.link-dark-green {
+    color: $light-grey;
+
+    &:hover {
+      color: $dark-green;
+    }
+  }
+
+  &.link-dark-blue {
+    color: $light-grey;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+
+  &.link-dark-purple {
+    color: $light-grey;
+
+    &:hover {
+      color: $dark-purple;
+    }
+  }
+
+  &.link-pastel-pink {
+    color: $light-grey;
+
+    &:hover {
+      color: $pastel-pink;
     }
   }
 }

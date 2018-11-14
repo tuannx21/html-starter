@@ -1,41 +1,30 @@
 .index-list {
-  font-size: 20px;
+  @extend %in-div-lg;
 
   .list-header {
     color: $light-grey;
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 
-  .list-item {
-    color: $light-grey;
-    border-bottom: 1px solid $deep-grey; 
-    padding: 25px 0;
+  .list-body {
+    @extend %in-div-sm;
+    font-size: 20px;
 
-    &:first-child {
-      padding-top: 0;
+    .list-item {
+      color: $light-grey;
+      border-bottom: 1px solid $deep-grey; 
+      padding: 25px 0;
+  
+      &:first-child {
+        padding-top: 0;
+      }
     }
   }
 
   .list-button {
-    margin: 25px 0 50px;
-    position: relative;
-    height: 50px;
-
-    @include responsive-tablet() {
-      margin: 40px 0;
-    }
-
     .button-subcribe-list {
-      border-radius: 10px;
-      color: $absolute-white;
-      display: block;
-      font-size: 15px;
-      padding: 5px 50px;
-      position: absolute;
-      right: 0;
-
       @include responsive-tablet() {
         position: static;
         margin: auto;

@@ -26,86 +26,63 @@ h6 {
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
+@media (min-width: 1200px) {
+  .container {
+    width: 1032px;
+  }
 }
-
-ul {
-  list-style: none;
-}
-
-button,
-input,
-select,
-textarea {
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-img,
-embed,
-iframe,
-object,
-audio,
-video {
-  height: auto;
-  max-width: 100%;
-}
-
-iframe {
-  border: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-  text-align: left;
-}
-
-.container {
-  width: 1032px;
-}
-
 .button {
   text-align: center;
   border: none;
   outline: none;
   cursor: pointer;
-  box-shadow: 0 2px 4px #959595;
-}
-.button.button-border-radius {
-  border-radius: 10px;
-}
-.button.button-border-radius-bottom {
-  border-radius: 0 0 10px 10px;
 }
 .button:hover {
   opacity: 0.8;
 }
 .button:active {
-  box-shadow: 0 0;
+  opacity: 1;
 }
-.button.button-red {
+.button.has-border-radius {
+  border-radius: 10px;
+}
+.button.has-border-radius-bottom {
+  border-radius: 0 0 10px 10px;
+}
+.button.has-shadow {
+  box-shadow: 0 2px 4px #959595;
+}
+.button.is-red {
   background-color: #d0121b;
   color: #ffffff;
+}
+.button.is-grey {
+  background-color: #302d29;
+  color: #ffffff;
+}
+.button.is-xs {
+  font-size: 15px;
+  padding: 5px 50px;
+}
+.button.is-sm {
+  font-size: 16px;
+  padding: 15px 50px;
+}
+.button.is-lg {
+  font-size: 20px;
+  padding: 25px 50px;
+}
+.button.is-fullwidth {
+  width: 100%;
+}
+.button.is-centerd {
+  display: block;
+  margin: auto;
+}
+.button.is-right {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .image {
@@ -133,24 +110,79 @@ th {
 .link.link-black:hover {
   color: #d01821;
 }
-.link.link-red {
+.link.link-light-red {
   color: #d01821;
   text-decoration: underline;
 }
-.link.link-red:hover, .link.link-red:active {
+.link.link-light-red:hover, .link.link-light-red:active {
   color: #403a32;
   cursor: pointer;
   text-decoration: none;
+}
+.link.link-heavy-red {
+  color: #302d29;
+}
+.link.link-heavy-red:hover {
+  color: #d0121b;
+}
+.link.link-dark-orange {
+  color: #302d29;
+}
+.link.link-dark-orange:hover {
+  color: #e89032;
+}
+.link.link-dark-green {
+  color: #302d29;
+}
+.link.link-dark-green:hover {
+  color: #55866b;
+}
+.link.link-dark-blue {
+  color: #302d29;
+}
+.link.link-dark-blue:hover {
+  color: #5c7ba3;
+}
+.link.link-dark-purple {
+  color: #302d29;
+}
+.link.link-dark-purple:hover {
+  color: #875b87;
+}
+.link.link-pastel-pink {
+  color: #302d29;
+}
+.link.link-pastel-pink:hover {
+  color: #e57e7e;
 }
 
 .table-list {
   display: table;
   width: 100%;
+  border-collapse: collapse;
 }
 .table-list .list-item {
   display: table-cell;
   width: 16.6667%;
   position: relative;
+}
+
+.index-business, .index-news .news, .index-news .news .new, .index-list, .index-location, .home-reservation .reservation-banner {
+  margin: 50px 0;
+}
+@media screen and (max-width: 991px) {
+  .index-business, .index-news .news, .index-news .news .new, .index-list, .index-location, .home-reservation .reservation-banner {
+    margin: 40px 0;
+  }
+}
+
+.index-list .list-body {
+  margin: 25px 0;
+}
+@media screen and (max-width: 991px) {
+  .index-list .list-body {
+    margin: 40px 0;
+  }
 }
 
 .main-footer {
@@ -226,13 +258,7 @@ th {
   }
 }
 
-.index-business {
-  padding: 50px 0;
-}
 @media screen and (max-width: 991px) {
-  .index-business {
-    padding: 40px 0;
-  }
   .index-business .col-md-4:not(:first-child) {
     margin-top: 25px;
   }
@@ -271,28 +297,6 @@ th {
   font-size: 16px;
   line-height: 30px;
 }
-.index-news .news {
-  margin: 50px 0;
-}
-@media screen and (max-width: 991px) {
-  .index-news .news {
-    margin: 40px 0;
-  }
-}
-.index-news .news .new {
-  margin-bottom: 50px;
-}
-.index-news .news .new:last-child {
-  margin-bottom: 0px;
-}
-@media screen and (max-width: 991px) {
-  .index-news .news .new {
-    margin-bottom: 40px;
-  }
-  .index-news .news .new:last-child {
-    margin-bottom: 0px;
-  }
-}
 .index-news .news .new-image {
   float: right;
   margin-left: 25px;
@@ -308,24 +312,7 @@ th {
 @media screen and (max-width: 991px) {
   .index-news .news .new-image-tablet {
     display: block;
-    width: 100%;
   }
-}
-.index-news .news-button {
-  margin: 50px 0;
-}
-@media screen and (max-width: 991px) {
-  .index-news .news-button {
-    margin: 40px 0;
-  }
-}
-.index-news .news-button .button-subcribe {
-  border-radius: 10px;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 25px 50px;
-  display: block;
-  margin: auto;
 }
 @media screen and (max-width: 991px) {
   .index-news .news-button .button-subcribe {
@@ -334,41 +321,22 @@ th {
   }
 }
 
-.index-list {
-  font-size: 20px;
-}
 .index-list .list-header {
   color: #302d29;
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
-.index-list .list-item {
+.index-list .list-body {
+  font-size: 20px;
+}
+.index-list .list-body .list-item {
   color: #302d29;
   border-bottom: 1px solid #282828;
   padding: 25px 0;
 }
-.index-list .list-item:first-child {
+.index-list .list-body .list-item:first-child {
   padding-top: 0;
-}
-.index-list .list-button {
-  margin: 25px 0 50px;
-  position: relative;
-  height: 50px;
-}
-@media screen and (max-width: 991px) {
-  .index-list .list-button {
-    margin: 40px 0;
-  }
-}
-.index-list .list-button .button-subcribe-list {
-  border-radius: 10px;
-  color: #ffffff;
-  display: block;
-  font-size: 15px;
-  padding: 5px 50px;
-  position: absolute;
-  right: 0;
 }
 @media screen and (max-width: 991px) {
   .index-list .list-button .button-subcribe-list {
@@ -377,9 +345,14 @@ th {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .index-location {
+    display: none;
+  }
+}
 .index-location .location-list-header {
-  font-size: 35px;
   margin-bottom: 50px;
+  font-size: 35px;
 }
 .index-location .location-places {
   display: table;
@@ -392,26 +365,15 @@ th {
   width: 20%;
 }
 .index-location .button-more {
-  background-color: #302d29;
-  border-radius: 0 0 10px 10px;
-  color: #ffffff;
-  font-size: 16px;
-  margin-bottom: 50px;
   height: 50px;
-  width: 100%;
-}
-@media screen and (max-width: 991px) {
-  .index-location {
-    display: none;
-  }
 }
 
 .index-banner-bottom {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 991px) {
   .index-banner-bottom {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
   .index-banner-bottom .col-md-4:not(:first-child) {
     margin-top: 25px;
@@ -463,7 +425,7 @@ th {
   position: relative;
   color: #403a32;
   font-size: 15px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   text-align: center;
 }
 .home-reservation .reservation-promotion .promo-tool-tip {
@@ -507,6 +469,7 @@ th {
   width: 100%;
   border: 2px solid #cccccc;
   border-radius: 6px;
+  border-collapse: collapse;
 }
 @media screen and (max-width: 991px) {
   .home-reservation .reservation-main {
@@ -529,7 +492,6 @@ th {
 @media screen and (max-width: 991px) {
   .home-reservation .reservation-main-mb {
     display: block;
-    width: 100%;
   }
 }
 .home-reservation .select-inf,
@@ -561,9 +523,6 @@ th {
   .home-reservation .button-search {
     border-radius: 10px;
   }
-}
-.home-reservation .reservation-banner {
-  margin: 50px 0;
 }
 .home-reservation .reservation-banner .banner-pc {
   display: block;
@@ -714,6 +673,61 @@ th {
   position: absolute;
   right: 0;
   top: 350px;
+}
+.home-map .map-area .right-line-10 {
+  position: absolute;
+  right: 0;
+  top: 381px;
+}
+.home-map .map-area .right-line-11 {
+  position: absolute;
+  right: 0;
+  top: 412px;
+}
+.home-map .map-area .right-line-12 {
+  position: absolute;
+  right: 0;
+  top: 477px;
+}
+.home-map .map-area .right-line-13 {
+  position: absolute;
+  right: 0;
+  top: 507px;
+}
+.home-map .map-area .right-line-14 {
+  position: absolute;
+  right: 0;
+  top: 540px;
+}
+.home-map .map-area .right-line-15 {
+  position: absolute;
+  right: 0;
+  top: 602px;
+}
+.home-map .map-area .right-line-16 {
+  position: absolute;
+  right: 0;
+  top: 635px;
+}
+.home-map .map-area .right-line-17 {
+  position: absolute;
+  right: 0;
+  top: 668px;
+}
+.home-map .map-area .right-line-18 {
+  position: absolute;
+  right: 0;
+  top: 698px;
+}
+.home-map .map-area .right-line-19 {
+  position: absolute;
+  right: 0;
+  top: 761px;
+}
+.home-map .map-area .right-line-20 {
+  position: absolute;
+  right: 0;
+  top: 792px;
 }
 .home-map .place-dot {
   height: 10px;

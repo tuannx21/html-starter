@@ -3,26 +3,64 @@
   border: none;
   outline: none;
   cursor: pointer;
-  box-shadow: 0 2px 4px $black-blur;
-
-  &.button-border-radius {
-    border-radius: 10px;
-  }
-
-  &.button-border-radius-bottom {
-    border-radius: 0 0 10px 10px;
-  }
 
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
-    box-shadow: 0 0;
+    opacity: 1;
   }
 
-  &.button-red {
+  &.has-border-radius {
+    border-radius: 10px;
+  }
+
+  &.has-border-radius-bottom {
+    border-radius: 0 0 10px 10px;
+  }
+
+  &.has-shadow {
+    box-shadow: 0 2px 4px $black-blur;
+  }
+
+  &.is-red {
     background-color: $heavy-red;
     color: $absolute-white;
+  }
+
+  &.is-grey {
+    background-color: $light-grey;
+    color: $absolute-white;
+  }
+
+  &.is-xs {
+    font-size: 15px;
+    padding: 5px 50px;
+  }
+
+  &.is-sm {
+    font-size: 16px;
+    padding: 15px 50px;
+  }
+
+  &.is-lg {
+    font-size: 20px;
+    padding: 25px 50px;
+  }
+
+  &.is-fullwidth {
+    width: 100%;
+  }
+
+  &.is-centerd {
+    display: block;
+    margin: auto;
+  }
+
+  &.is-right {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
   }
 }

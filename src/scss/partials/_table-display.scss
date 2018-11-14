@@ -1,7 +1,8 @@
 .table-list {
   display: table;
   width: 100%;
-
+  border-collapse: collapse;
+  
   .list-item {
     display: table-cell;
     width: 16.6667%;

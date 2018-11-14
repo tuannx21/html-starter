@@ -17,7 +17,7 @@
       }
     }
 
-    .new-status{
+    .new-status {
       font-size: 12px;
       padding: 8px 12px;
       color: $light-red;
@@ -26,8 +26,6 @@
       margin: 12px 0;
       display: inline;
     }
-
-    
   }
 
   .new-title {
@@ -40,26 +38,10 @@
   }
 
   .news {
-    margin: 50px 0;
-
-    @include responsive-tablet() {
-      margin: 40px 0;
-    }
+    @extend %in-div-lg;
 
     .new {
-      margin-bottom: 50px;
-
-      &:last-child {
-        margin-bottom: 0px;
-      }
-
-      @include responsive-tablet() {
-        margin-bottom: 40px;
-  
-        &:last-child {
-          margin-bottom: 0px;
-        }
-      }
+      @extend %in-div-lg;
     }
 
     .new-image {
@@ -76,26 +58,12 @@
 
       @include responsive-tablet() {
         display: block;
-        width: 100%;
       }
     }
   }
 
-  .news-button{
-    margin: 50px 0;
-
-    @include responsive-tablet() {
-      margin: 40px 0;
-    }
-
+  .news-button {
     .button-subcribe {
-      border-radius: 10px;
-      color: $absolute-white;
-      font-size: 20px;
-      padding: 25px 50px;
-      display: block;
-      margin: auto;
-
       @include responsive-tablet() {
         font-size: 16px;
         padding: 15px 50px;

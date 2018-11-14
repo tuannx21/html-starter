@@ -1,10 +1,8 @@
 .index-business {
-  padding: 50px 0;
-
-  @include responsive-tablet() {
-    padding: 40px 0;
-
-    .col-md-4 {
+  @extend %in-div-lg;
+  
+  .col-md-4 {
+    @include responsive-tablet() {
       &:not(:first-child) {
         margin-top: 25px;
       }
