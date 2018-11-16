@@ -88,71 +88,71 @@ h6 {
 .image {
   width: 100%;
 }
-.image.image-border-radius {
-  border-radius: 10px;
-}
-.image.image-border-radius-top {
-  border-radius: 10px 10px 0 0;
-}
-.image-with-shadow {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
 .image:hover {
   opacity: 0.8;
+}
+.image.has-border-radius {
+  border-radius: 10px;
+}
+.image.has-border-radius-top {
+  border-radius: 10px 10px 0 0;
+}
+.image.has-shadow {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .link {
   cursor: pointer;
 }
-.link.link-black {
+.link.is-black {
   color: #575653;
 }
-.link.link-black:hover {
+.link.is-black:hover {
   color: #d01821;
 }
-.link.link-light-red {
+.link.is-light-red {
   color: #d01821;
   text-decoration: underline;
 }
-.link.link-light-red:hover, .link.link-light-red:active {
+.link.is-light-red:hover, .link.is-light-red:active {
   color: #403a32;
   cursor: pointer;
   text-decoration: none;
 }
-.link.link-heavy-red {
+.link.is-heavy-red {
   color: #302d29;
 }
-.link.link-heavy-red:hover {
+.link.is-heavy-red:hover {
   color: #d0121b;
 }
-.link.link-dark-orange {
+.link.is-dark-orange {
   color: #302d29;
 }
-.link.link-dark-orange:hover {
+.link.is-dark-orange:hover {
   color: #e89032;
 }
-.link.link-dark-green {
+.link.is-dark-green {
   color: #302d29;
 }
-.link.link-dark-green:hover {
+.link.is-dark-green:hover {
   color: #55866b;
 }
-.link.link-dark-blue {
+.link.is-dark-blue {
   color: #302d29;
 }
-.link.link-dark-blue:hover {
+.link.is-dark-blue:hover {
   color: #5c7ba3;
 }
-.link.link-dark-purple {
+.link.is-dark-purple {
   color: #302d29;
 }
-.link.link-dark-purple:hover {
+.link.is-dark-purple:hover {
   color: #875b87;
 }
-.link.link-pastel-pink {
+.link.is-pastel-pink {
   color: #302d29;
 }
-.link.link-pastel-pink:hover {
+.link.is-pastel-pink:hover {
   color: #e57e7e;
 }
 
@@ -730,154 +730,202 @@ h6 {
   top: 792px;
 }
 .home-map .map-area .left-line-1-hover {
+  display: none;
   position: absolute;
   top: 137px;
   left: 70px;
 }
 .home-map .map-area .left-line-2-hover {
+  display: none;
   position: absolute;
   top: 166px;
   left: 119px;
 }
 .home-map .map-area .left-line-3-hover {
+  display: none;
   position: absolute;
   top: 200px;
   left: 168px;
 }
 .home-map .map-area .left-line-4-hover {
+  display: none;
   position: absolute;
   top: 233px;
   left: 47px;
 }
 .home-map .map-area .left-line-5-hover {
+  display: none;
   position: absolute;
   top: 302px;
   left: 189px;
 }
 .home-map .map-area .left-line-6-hover {
+  display: none;
   position: absolute;
   top: 333px;
   left: 150px;
 }
 .home-map .map-area .left-line-7-hover {
+  display: none;
   position: absolute;
   top: 366px;
   left: 148px;
 }
 .home-map .map-area .left-line-8-hover {
+  display: none;
   position: absolute;
   top: 428px;
   left: 168px;
 }
 .home-map .map-area .left-line-9-hover {
+  display: none;
   position: absolute;
   top: 460px;
   left: 147px;
 }
 .home-map .map-area .left-line-10-hover {
+  display: none;
   position: absolute;
   top: 492px;
   left: 223px;
 }
 .home-map .map-area .left-line-11-hover {
+  display: none;
   position: absolute;
   top: 558px;
   left: 166px;
 }
 .home-map .map-area .left-line-12-hover {
+  display: none;
   position: absolute;
   top: 591px;
   left: 197px;
 }
 .home-map .map-area .left-line-13-hover {
+  display: none;
   position: absolute;
   top: 728px;
   left: 52px;
 }
 .home-map .map-area .left-line-14-hover {
+  display: none;
   position: absolute;
   top: 687px;
   left: 147px;
 }
 .home-map .map-area .right-line-1-hover {
+  display: none;
   position: absolute;
   top: 41px;
   left: 689px;
 }
 .home-map .map-area .right-line-2-hover {
+  display: none;
   position: absolute;
   top: 73px;
   left: 701px;
 }
 .home-map .map-area .right-line-3-hover {
+  display: none;
   position: absolute;
   top: 108px;
   left: 708px;
 }
 .home-map .map-area .right-line-4-hover {
+  display: none;
   position: absolute;
   top: 141px;
   left: 731px;
 }
 .home-map .map-area .right-line-5-hover {
+  display: none;
   position: absolute;
   top: 174px;
   left: 660px;
 }
 .home-map .map-area .right-line-6-hover {
+  display: none;
   position: absolute;
   top: 205px;
   left: 676px;
 }
 .home-map .map-area .right-line-7-hover {
+  display: none;
   position: absolute;
   top: 268px;
   left: 649px;
 }
 .home-map .map-area .right-line-8-hover {
+  display: none;
   position: absolute;
   top: 301px;
   left: 661px;
 }
 .home-map .map-area .right-line-9-hover {
+  display: none;
   position: absolute;
   top: 365px;
   left: 647px;
 }
 .home-map .map-area .right-line-10-hover {
+  display: none;
   position: absolute;
   top: 396px;
   left: 658px;
 }
 .home-map .map-area .right-line-11-hover {
+  display: none;
   position: absolute;
   top: 430px;
   left: 645px;
 }
 .home-map .map-area .right-line-12-hover {
+  display: none;
   position: absolute;
   top: 491px;
   left: 653px;
 }
 .home-map .map-area .right-line-14-hover {
+  display: none;
   position: absolute;
   top: 521px;
   left: 652px;
 }
 .home-map .map-area .right-line-15-hover {
+  display: none;
   position: absolute;
   top: 531px;
   left: 594px;
 }
 .home-map .map-area .right-line-16-hover {
+  display: none;
   position: absolute;
   top: 542px;
   left: 594px;
 }
 .home-map .map-area .right-line-17-hover {
+  display: none;
   position: absolute;
   top: 559px;
-  left: 592px;
+  left: 587px;
+}
+.home-map .map-area .right-line-18-hover {
+  display: none;
+  position: absolute;
+  top: 561px;
+  left: 572px;
+}
+.home-map .map-area .right-line-19-hover {
+  display: none;
+  position: absolute;
+  top: 554px;
+  left: 544px;
+}
+.home-map .map-area .right-line-20-hover {
+  display: none;
+  position: absolute;
+  top: 590px;
+  left: 461px;
 }
 .home-map .place-dot {
   height: 10px;

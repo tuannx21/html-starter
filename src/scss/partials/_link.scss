@@ -69,3 +69,11 @@
     }
   }
 }
+
+.link {
+  background: url(...-1)
+
+  &:hover {
+    background url(...-2)
+  }
+}
