@@ -176,11 +176,11 @@ h6 {
   }
 }
 
-.index-list .list-body {
+.index-list .list-body, .home-service .carousel {
   margin: 25px 0;
 }
 @media screen and (max-width: 991px) {
-  .index-list .list-body {
+  .index-list .list-body, .home-service .carousel {
     margin: 40px 0;
   }
 }
@@ -949,4 +949,18 @@ h6 {
 }
 .home-map .place-dot.pink {
   background-color: #e57e7e;
+}
+
+.home-service {
+  background: url(/images/home/bg_bannerarea.jpg) repeat-x;
+  padding: 50px 0;
+}
+.home-service .carousel-header {
+  text-align: center;
+}
+.home-service .carousel .table-list {
+  margin: 0 -15px;
+}
+.home-service .carousel .table-list .list-item {
+  margin: 0 15px;
 }
