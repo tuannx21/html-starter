@@ -1,7 +1,7 @@
 .link {
   cursor: pointer;
   
-  &.link-black {
+  &.is-black {
     color: $header-font-color;
 
     &:hover {
@@ -9,7 +9,7 @@
     }
   }
 
-  &.link-light-red {
+  &.is-light-red {
     color: $light-red;
     text-decoration: underline;
 
@@ -21,7 +21,7 @@
     }
   }
 
-  &.link-heavy-red {
+  &.is-heavy-red {
     color: $light-grey;
 
     &:hover {
@@ -29,7 +29,7 @@
     }
   }
 
-  &.link-dark-orange {
+  &.is-dark-orange {
     color: $light-grey;
 
     &:hover {
@@ -37,7 +37,7 @@
     }
   }
 
-  &.link-dark-green {
+  &.is-dark-green {
     color: $light-grey;
 
     &:hover {
@@ -45,7 +45,7 @@
     }
   }
 
-  &.link-dark-blue {
+  &.is-dark-blue {
     color: $light-grey;
 
     &:hover {
@@ -53,7 +53,7 @@
     }
   }
 
-  &.link-dark-purple {
+  &.is-dark-purple {
     color: $light-grey;
 
     &:hover {
@@ -61,7 +61,7 @@
     }
   }
 
-  &.link-pastel-pink {
+  &.is-pastel-pink {
     color: $light-grey;
 
     &:hover {

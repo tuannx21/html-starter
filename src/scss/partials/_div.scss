@@ -1,15 +1,15 @@
 %in-div-lg {
   margin: 50px 0;
 
-    @include responsive-tablet() {
-      margin: 40px 0;
-    }
+  @include responsive-tablet() {
+    margin: 40px 0;
+  }
 }
 
 %in-div-sm {
   margin: 25px 0;
 
-    @include responsive-tablet() {
-      margin: 40px 0;
-    }
+  @include responsive-tablet() {
+    margin: 40px 0;
+  }
 }
