@@ -43,7 +43,8 @@
           files: [
             {
               src: [
-                '<%= srcPath %>/js/vendor/jquery.min.js'
+                '<%= srcPath %>/js/vendor/jquery.min.js',
+                '<%= srcPath %>/js/siema.min.js'
               ],
               dest: '<%= destPath %>/js/vendor.js'
             },
