@@ -44,7 +44,7 @@
             {
               src: [
                 '<%= srcPath %>/js/vendor/jquery.min.js',
-                '<%= srcPath %>/js/siema.min.js'
+                '<%= srcPath %>/js/slick.min.js'
               ],
               dest: '<%= destPath %>/js/vendor.js'
             },

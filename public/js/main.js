@@ -1,14 +1,27 @@
 (function() {
   'use strict';
   console.log('hello');
-  var mySiema = new Siema({
-    perPage: 4,
-    loop: true
-  });
-  document.querySelector('.btn-prev').addEventListener('click', function() {
-    mySiema.prev();
-  });
-  document.querySelector('.btn-next').addEventListener('click', function() {
-    mySiema.next();
+  $(document).ready(function() {
+    $('.slick-carousel').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 2e3,
+      responsive: [ {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      } ]
+    });
   });
 })();
