@@ -66,9 +66,14 @@ h6 {
   background-color: #302d29;
   color: #ffffff;
 }
+.button.is-grey-2 {
+  background-color: #e7e6e5;
+  color: #a6a19d;
+}
 .button.is-xs {
+  min-width: 120px;
   font-size: 15px;
-  padding: 5px 50px;
+  padding: 10px;
 }
 .button.is-sm {
   font-size: 16px;
@@ -184,11 +189,11 @@ h6 {
   }
 }
 
-.index-list .list-body, .home-service .carousel {
+.index-list .list-body, .home-service .carousel, .home-location .button-search {
   margin: 25px 0;
 }
 @media screen and (max-width: 991px) {
-  .index-list .list-body, .home-service .carousel {
+  .index-list .list-body, .home-service .carousel, .home-location .button-search {
     margin: 40px 0;
   }
 }
@@ -965,11 +970,64 @@ h6 {
   min-height: 1px;
   margin: 50px 0 25px;
 }
-.home-location .tool-buttons {
+.home-location .button-area {
+  margin: 50px 0 25px;
+}
+.home-location .button-area .tool-buttons {
   display: inline-block;
 }
-.home-location .tool-buttons .btn-place {
+.home-location .button-area .tool-buttons .btn-place {
   float: left;
+  margin: 1px;
+}
+@media screen and (max-width: 991px) {
+  .home-location .button-search {
+    display: none;
+  }
+}
+
+.card {
+  background-color: #875b87;
+  margin: 10px 0;
+}
+.card .image-area {
+  width: 60%;
+}
+.card .inform-area {
+  width: 40%;
+  vertical-align: top;
+}
+.card .inform-area .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 25px;
+}
+.card .inform-area .body {
+  background: #f5efe9;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+.card .inform-area .body .promo {
+  margin: 25px 25px 0;
+}
+.card .inform-area .body .content {
+  margin: 25px;
+  font-size: 22px;
+}
+.card .inform-area .body .slider-area {
+  bottom: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.card .inform-area .body .slider-area .slide-description {
+  font-size: 12px;
+  padding: 0 5px;
 }
 
 .slick-slider {
