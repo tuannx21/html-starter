@@ -1,12 +1,4 @@
 .news-title {
   border-bottom: 1px solid $header-border;
   position: relative;
-
-  .title-center {
-    position: absolute;
-    font-size: 36px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }

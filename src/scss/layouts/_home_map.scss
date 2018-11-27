@@ -439,34 +439,4 @@
       left: 461px;
     }
   }
-
-  .place-dot {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-
-    &.red {
-      background-color: $heavy-red;
-    }
-
-    &.orange {
-      background-color: $dark-orange;
-    }
-
-    &.green {
-      background-color: $dark-green;
-    }
-
-    &.blue {
-      background-color: $dark-blue;
-    }
-
-    &.purple {
-      background-color: $dark-purple;
-    }
-
-    &.pink {
-      background-color: $pastel-pink;
-    }
-  }
 }

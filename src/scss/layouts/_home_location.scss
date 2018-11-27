@@ -1,0 +1,17 @@
+.home-location {
+  @extend %in-div-lg;
+
+  .tool-select-place {
+    position: relative;
+    min-height: 1px;
+    margin: 50px 0 25px;
+  }
+  
+  .tool-buttons {
+      display: inline-block;
+
+      .btn-place {
+        float: left;
+      }
+    }
+}

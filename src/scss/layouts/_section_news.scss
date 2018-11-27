@@ -1,4 +1,6 @@
-.index-news {
+.section-news {
+  @extend %in-div-lg;
+
   .news-header {
     font-size: 36px;
   }
@@ -23,8 +25,7 @@
       color: $light-red;
       border: 1px solid $light-red;
       text-align: center;
-      margin: 12px 0;
-      display: inline;
+      display: inline-block;
     }
   }
 
@@ -58,15 +59,6 @@
 
       @include responsive-tablet() {
         display: block;
-      }
-    }
-  }
-
-  .news-button {
-    .button-subcribe {
-      @include responsive-tablet() {
-        font-size: 16px;
-        padding: 15px 50px;
       }
     }
   }

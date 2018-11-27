@@ -1,7 +1,7 @@
 .button {
   text-align: center;
-  border: none;
-  outline: none;
+  border: 0;
+  outline: 0;
   cursor: pointer;
 
   &:hover {
@@ -18,6 +18,14 @@
 
   &.has-border-radius-bottom {
     border-radius: 0 0 10px 10px;
+  }
+
+  &.has-border-radius-left {
+    border-radius: 10px 0 0px 10px;
+  }
+
+  &.has-border-radius-right {
+    border-radius: 0 10px 10px 0;
   }
 
   &.has-shadow {
@@ -42,25 +50,24 @@
   &.is-sm {
     font-size: 16px;
     padding: 15px 50px;
+
+    @include responsive-tablet() {
+      font-size: 15px;
+      padding: 5px 50px;
+    }
   }
 
   &.is-lg {
     font-size: 20px;
     padding: 25px 50px;
+
+    @include responsive-tablet() {
+      font-size: 16px;
+      padding: 15px 50px;
+    }
   }
 
   &.is-fullwidth {
     width: 100%;
-  }
-
-  &.is-centerd {
-    display: block;
-    margin: auto;
-  }
-
-  &.is-right {
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
   }
 }
