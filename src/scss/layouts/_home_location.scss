@@ -10,6 +10,10 @@
   .button-area {
     margin: 50px 0 25px;
 
+    @include responsive-tablet() {
+      display: none;
+    }
+
     .tool-buttons {
       display: inline-block;
 
@@ -21,7 +25,7 @@
   }
 
   .button-search {
-    @extend %in-div-sm;
+    margin-top: 25px;
 
     @include responsive-tablet() {
       display: none;

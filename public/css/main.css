@@ -181,20 +181,41 @@ h6 {
 }
 
 .section-3-image, .section-news, .section-news .news, .section-news .news .new, .index-list, .index-location, .home-reservation .reservation-banner, .home-location {
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 991px) {
   .section-3-image, .section-news, .section-news .news, .section-news .news .new, .index-list, .index-location, .home-reservation .reservation-banner, .home-location {
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 
-.index-list .list-body, .home-service .carousel, .home-location .button-search {
-  margin: 25px 0;
+.index-list .list-body, .home-service .carousel {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 @media screen and (max-width: 991px) {
-  .index-list .list-body, .home-service .carousel, .home-location .button-search {
-    margin: 40px 0;
+  .index-list .list-body, .home-service .carousel {
+    margin-top: 4px;
+    margin-bottom: 40px;
+  }
+}
+
+.div-lg {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.div-sm {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 991px) {
+  .div-responsive-gutter {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -957,12 +978,22 @@ h6 {
 .home-service .carousel .slick-prev:hover {
   background: transparent url("/images/icon/ico_previous-hover.png") no-repeat center;
 }
+@media screen and (max-width: 767px) {
+  .home-service .carousel .slick-prev {
+    display: none;
+  }
+}
 .home-service .carousel .slick-next {
   right: -50px;
   background: transparent url("/images/icon/ico_next.png") no-repeat center;
 }
 .home-service .carousel .slick-next:hover {
   background: transparent url("/images/icon/ico_next-hover.png") no-repeat center;
+}
+@media screen and (max-width: 767px) {
+  .home-service .carousel .slick-next {
+    display: none;
+  }
 }
 
 .home-location .tool-select-place {
@@ -973,12 +1004,20 @@ h6 {
 .home-location .button-area {
   margin: 50px 0 25px;
 }
+@media screen and (max-width: 991px) {
+  .home-location .button-area {
+    display: none;
+  }
+}
 .home-location .button-area .tool-buttons {
   display: inline-block;
 }
 .home-location .button-area .tool-buttons .btn-place {
   float: left;
   margin: 1px;
+}
+.home-location .button-search {
+  margin-top: 25px;
 }
 @media screen and (max-width: 991px) {
   .home-location .button-search {
@@ -987,15 +1026,27 @@ h6 {
 }
 
 .card {
-  background-color: #875b87;
   margin: 10px 0;
 }
 .card .image-area {
   width: 60%;
 }
+@media screen and (max-width: 991px) {
+  .card .image-area {
+    display: block;
+    width: 100%;
+  }
+}
 .card .inform-area {
+  background-color: #875b87;
   width: 40%;
   vertical-align: top;
+}
+@media screen and (max-width: 991px) {
+  .card .inform-area {
+    display: block;
+    width: 100%;
+  }
 }
 .card .inform-area .title {
   font-size: 20px;
@@ -1005,11 +1056,6 @@ h6 {
 }
 .card .inform-area .body {
   background: #f5efe9;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  right: 0;
-  bottom: 10px;
 }
 .card .inform-area .body .promo {
   margin: 25px 25px 0;
@@ -1017,13 +1063,8 @@ h6 {
 .card .inform-area .body .content {
   margin: 25px;
   font-size: 22px;
-}
-.card .inform-area .body .slider-area {
-  bottom: 5px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 90px;
+  overflow: hidden;
 }
 .card .inform-area .body .slider-area .slide-description {
   font-size: 12px;

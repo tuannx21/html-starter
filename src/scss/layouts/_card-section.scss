@@ -1,14 +1,24 @@
 .card {
-  background-color: $dark-purple;
   margin: 10px 0;
 
   .image-area {
     width: 60%;
+
+    @include responsive-tablet() {
+      display: block;
+      width: 100%;
+    }
   }
 
   .inform-area {
+    background-color: $dark-purple;
     width: 40%;
     vertical-align: top;
+
+    @include responsive-tablet() {
+      display: block;
+      width: 100%;
+    }
 
     .title {
       font-size: 20px;
@@ -19,11 +29,6 @@
 
     .body {
       background: $cream-milk;
-      position: absolute;
-      top: 30px;
-      left: 0;
-      right: 0;
-      bottom: 10px;
 
       .promo {
         margin: 25px 25px 0;
@@ -32,15 +37,11 @@
       .content {
         margin: 25px;
         font-size: 22px;
+        height: 90px;
+        overflow: hidden;
       }
     
       .slider-area {
-        bottom: 5px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
         .slide-description {
           font-size: 12px;
           padding: 0 5px;

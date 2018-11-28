@@ -27,6 +27,10 @@
       &:hover {
         background: transparent url('/images/icon/ico_previous-hover.png') no-repeat center;
       }
+
+      @include responsive-mobile() {
+        display:none;
+      }
     }
 
     .slick-next {
@@ -35,6 +39,10 @@
 
       &:hover {
         background: transparent url('/images/icon/ico_next-hover.png') no-repeat center;
+      }
+
+      @include responsive-mobile() {
+        display:none;
       }
     }
   }

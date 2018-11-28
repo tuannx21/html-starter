@@ -1,15 +1,36 @@
 %in-div-lg {
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   @include responsive-tablet() {
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 
 %in-div-sm {
-  margin: 25px 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   @include responsive-tablet() {
-    margin: 40px 0;
+    margin-top: 4px;
+    margin-bottom: 40px;
+  }
+}
+
+.div-lg {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.div-sm {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.div-responsive-gutter {
+  @include responsive-tablet() {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
