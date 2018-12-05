@@ -17,7 +17,7 @@
       variableWidth: true
     });
   });
-  var x = document.querySelectorAll('.line');
+  var x = Array.prototype.slice.call(document.querySelectorAll('.line'));
   x.forEach(function(a) {
     a.addEventListener('mouseover', function() {
       document.querySelector('#' + a.dataset.target).classList.add('active');
