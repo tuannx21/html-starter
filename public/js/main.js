@@ -1,6 +1,5 @@
 (function() {
   'use strict';
-  console.log('hello');
   $(document).ready(function() {
     $('.slick-carousel').slick({
       slidesToShow: 4,
@@ -18,10 +17,13 @@
       variableWidth: true
     });
   });
-  function mouseOverMapLink(image) {
-    document.getElementsByClassName(image)[0].style.display = 'inline';
-  }
-  function mouseOutMapLink(image) {
-    document.getElementsByClassName(image)[0].style.display = 'none';
-  }
+  var x = document.querySelectorAll('.line');
+  x.forEach(function(a) {
+    a.addEventListener('mouseover', function() {
+      document.querySelector('#' + a.dataset.target).classList.add('active');
+    });
+    a.addEventListener('mouseout', function() {
+      document.querySelector('#' + a.dataset.target).classList.remove('active');
+    });
+  });
 })();
