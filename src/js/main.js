@@ -9,9 +9,6 @@
 			autoplaySpeed: 2000,
 			variableWidth: true,
 		});
-	});
-
-	$(document).ready(function () {
 		$('.slick-carousel-more-info').slick({
 			slidesToShow: 4,
 			autoplay: true,
@@ -20,13 +17,13 @@
 		});
 	});
 
-	var x = Array.prototype.slice.call(document.querySelectorAll('.line'));
-	x.forEach(function (a) {
-		a.addEventListener("mouseover", function () {
-			document.querySelector('#'+a.dataset.target).classList.add("active");
+	var lineArray = Array.prototype.slice.call(document.querySelectorAll('.line'));
+	lineArray.forEach(function (line) {
+		line.addEventListener("mouseover", function () {
+			document.querySelector('#'+line.dataset.target).classList.add("active");
 		});
-		a.addEventListener("mouseout", function () {
-			document.querySelector('#'+a.dataset.target).classList.remove("active");
+		line.addEventListener("mouseout", function () {
+			document.querySelector('#'+line.dataset.target).classList.remove("active");
 		});
 	});
 })();
