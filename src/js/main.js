@@ -20,10 +20,10 @@
 	var lineArray = Array.prototype.slice.call(document.querySelectorAll('.line'));
 	lineArray.forEach(function (line) {
 		line.addEventListener("mouseover", function () {
-			document.querySelector('#'+line.dataset.target).classList.add("active");
+			document.querySelector('#'+line.getAttribute("data-target")).classList.add("active");
 		});
 		line.addEventListener("mouseout", function () {
-			document.querySelector('#'+line.dataset.target).classList.remove("active");
+			document.querySelector('#'+line.getAttribute("data-target")).classList.remove("active");
 		});
 	});
 })();
